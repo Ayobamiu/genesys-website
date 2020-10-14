@@ -3,13 +3,24 @@ import pic_1 from "../images/learnable/pic_1.png";
 import pic_2 from "../images/learnable/pic_2.png";
 import pic_3 from "../images/learnable/pic_3.png";
 import pic_4 from "../images/learnable/pic_4.png";
+import pic_5 from "../images/learnable/pic_5.png";
 import rec_2_1 from "../images/learnable/rec_2_1.png";
 import rec_2_2 from "../images/learnable/rec_2_2.png";
 import rec_2_3 from "../images/learnable/rec_2_3.png";
 import rec_2_4 from "../images/learnable/rec_2_4.png";
 import rec_2_5 from "../images/learnable/rec_2_5.png";
 import rec_2_6 from "../images/learnable/rec_2_6.png";
+import journal_2 from "../images/journal/pic_2.png";
+import journal_3 from "../images/journal/pic_3.png";
+import journal_4 from "../images/journal/pic_4.png";
+import journal_5 from "../images/journal/pic_5.png";
+import mention_1 from "../images/journal/mention_1.png";
+import mention_2 from "../images/journal/mention_2.png";
+import mention_3 from "../images/journal/mention_3.png";
+import mention_4 from "../images/journal/mention_4.png";
+import mention_5 from "../images/journal/mention_5.png";
 import arrow_down from "../images/learnable/arrow-down.png";
+import arrow_up from "../images/landing/arrow_up.png";
 
 class Home extends Component {
   state = {};
@@ -491,6 +502,212 @@ class Home extends Component {
             <div className="learnable-home-section-learning-outside-class__box learnable-home-section-learning-outside-class__box-fourteen"></div>
             <div className="learnable-home-section-learning-outside-class__box learnable-home-section-learning-outside-class__box-fiften"></div>
             <div className="learnable-home-section-learning-outside-class__box learnable-home-section-learning-outside-class__box-sixteen"></div>
+          </div>
+        </section>
+
+        <section className="learnable-home-section-apply-your-knowledge">
+          <div className="learnable-home-section-apply-your-knowledge--media">
+            <img src={pic_5} alt="" width="100%" />
+          </div>
+          <div className="learnable-home-section-apply-your-knowledge--text">
+            <h1>Apply Your Knowledge</h1>
+            <p>
+              Before you re done with Learnable, you will apply everything you
+              ve learned. You ll be part of a team made up of 2 designers and 4
+              developers. You ll get to work alongside the Genesys team on
+              projects and we ll teach you how the sauce is made. By combining
+              technology, design, and great ideas, your team will have the
+              unique opportunity to collaborate with the Genesys team to bring
+              your own concept to life, from the first pen sketches to the final
+              functioning product. You ll then get to show off your special
+              project to everyone.
+            </p>
+            <a href="#"> get started</a>
+          </div>
+        </section>
+
+        <section className="learnable-home-section-faqs">
+          <h1 className="learnable-home-section-faqs--head">FAQ</h1>
+
+          <div className="learnable-home-section-faqs__faqs">
+            <div className="learnable-home-section-faqs__faq">
+              <a href="#" className="learnable-home-section-faqs__faq--link">
+                How many people can attend a course?
+              </a>
+              <p className="learnable-home-section-faqs__faq--icon">&#8248;</p>
+            </div>
+            <div className="learnable-home-section-faqs__faq">
+              <a href="#" className="learnable-home-section-faqs__faq--link">
+                What s the learning experience like?
+              </a>
+              <p className="learnable-home-section-faqs__faq--icon">&#8248;</p>
+            </div>
+            <div className="learnable-home-section-faqs__faq">
+              <a href="#" className="learnable-home-section-faqs__faq--link">
+                Who are the coaches?
+              </a>
+              <p className="learnable-home-section-faqs__faq--icon">&#8248;</p>
+            </div>
+            <div className="learnable-home-section-faqs__faq">
+              <a href="#" className="learnable-home-section-faqs__faq--link">
+                How far in advance should we book?
+              </a>
+              <p className="learnable-home-section-faqs__faq--icon">&#8248;</p>
+            </div>
+            <div className="learnable-home-section-faqs__faq">
+              <a href="#" className="learnable-home-section-faqs__faq--link">
+                Can you customize your courses?
+              </a>
+              <p className="learnable-home-section-faqs__faq--icon">&#8248;</p>
+            </div>
+            <a href="#" className="learnable-home-section-faqs__faq--see-all">
+              SEE ALL
+            </a>
+          </div>
+        </section>
+
+        <section className="learnable-home-section-journal">
+          <h1 className="learnable-home-section-journal--head">Journal</h1>
+          <a href="#" className="learnable-home-section-journal--see--all">
+            view all
+          </a>
+          <div className="learnable-home-section-journal--journals">
+            <div className="learnable-home-section-journal--journal">
+              <img
+                src={journal_2}
+                alt=""
+                className="learnable-home-section-journal--journal--image"
+              />
+              <a
+                href="#"
+                className="learnable-home-section-journal--journal--link"
+              >
+                INSPIRATION
+              </a>
+              <h1 className="learnable-home-section-journal--journal--head">
+                Learn Design Thinking like a Pro and Build Projects that People
+                will care about
+              </h1>
+              <small className="learnable-home-section-journal--journal--date">
+                David Mong, Apr 9, 2020
+              </small>
+            </div>
+            <div className="learnable-home-section-journal--journal">
+              <img
+                src={journal_3}
+                alt=""
+                className="learnable-home-section-journal--journal--image"
+              />
+              <a
+                href="#"
+                className="learnable-home-section-journal--journal--link"
+              >
+                INSPIRATION
+              </a>
+              <h1 className="learnable-home-section-journal--journal--head">
+                Learn Design Thinking like a Pro and Build Projects that People
+                will care about
+              </h1>
+              <small className="learnable-home-section-journal--journal--date">
+                David Mong, Apr 9, 2020
+              </small>
+            </div>
+            <div className="learnable-home-section-journal--journal">
+              <img
+                src={journal_4}
+                alt=""
+                className="learnable-home-section-journal--journal--image"
+              />
+              <a
+                href="#"
+                className="learnable-home-section-journal--journal--link"
+              >
+                INSPIRATION
+              </a>
+              <h1 className="learnable-home-section-journal--journal--head">
+                Learn Design Thinking like a Pro and Build Projects that People
+                will care about
+              </h1>
+              <small className="learnable-home-section-journal--journal--date">
+                David Mong, Apr 9, 2020
+              </small>
+            </div>
+            <div className="learnable-home-section-journal--journal">
+              <img
+                src={journal_5}
+                alt=""
+                className="learnable-home-section-journal--journal--image"
+              />
+              <a
+                href="#"
+                className="learnable-home-section-journal--journal--link"
+              >
+                INSPIRATION
+              </a>
+              <h1 className="learnable-home-section-journal--journal--head">
+                Learn Design Thinking like a Pro and Build Projects that People
+                will care about
+              </h1>
+              <small className="learnable-home-section-journal--journal--date">
+                David Mong, Apr 9, 2020
+              </small>
+            </div>
+          </div>
+        </section>
+
+        <section className="learnable-home-section-mentioned-in">
+          <p className="learnable-home-section-mentioned-in--text">
+            Mentioned in
+          </p>
+          <img
+            className="learnable-home-section-mentioned-in--image"
+            src={mention_1}
+            alt=""
+          />
+          <img
+            className="learnable-home-section-mentioned-in--image"
+            src={mention_2}
+            alt=""
+          />
+          <img
+            className="learnable-home-section-mentioned-in--image"
+            src={mention_3}
+            alt=""
+          />
+          <img
+            className="learnable-home-section-mentioned-in--image"
+            src={mention_4}
+            alt=""
+          />
+          <img
+            className="learnable-home-section-mentioned-in--image"
+            src={mention_5}
+            alt=""
+          />
+        </section>
+
+        <section className="landing__section-stay-up-to-date">
+          <div className="landing__section-stay-up-to-date__arrow-up">
+            <img src={arrow_up} alt="" />
+          </div>
+          <div className="landing__section-stay-up-to-date__text landing__section-stay-up-to-date--yellow">
+            <h1 className="landing__section-stay-up-to-date__text--heading">
+              Stay up to date on what we are doing and new learning
+              opportunities
+            </h1>
+            <div className="landing__section-stay-up-to-date__text--middle">
+              <input
+                className="landing__section-stay-up-to-date__text--middle-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="YOUR EMAIL"
+              />
+              <p>View Privacy Policy</p>
+            </div>
+            <button className="landing__section-stay-up-to-date__text--button">
+              subscribe
+            </button>
           </div>
         </section>
       </div>

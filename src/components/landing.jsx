@@ -114,11 +114,11 @@ class Landing extends Component {
             <a href="#">See team</a>
           </div>
         </section>
-        <section className="landing__section-stay-up-to-date">
+        <section className="landing__section-stay-up-to-date ">
           <div className="landing__section-stay-up-to-date__arrow-up">
             <img src={arrow_up} alt="" />
           </div>
-          <div className="landing__section-stay-up-to-date__text">
+          <div className="landing__section-stay-up-to-date__text landing__section-stay-up-to-date--green">
             <h1 className="landing__section-stay-up-to-date__text--heading">
               Stay up to date on what we are doing and new learning
               opportunities
