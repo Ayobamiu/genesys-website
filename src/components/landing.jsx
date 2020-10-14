@@ -3,6 +3,11 @@ import arrow_down from "../images/learnable/arrow-down.png";
 import pic_1 from "../images/landing/pic_1.png";
 import pic_2 from "../images/landing/pic_2.png";
 import pic_3 from "../images/landing/pic_3.png";
+import pic_4 from "../images/landing/pic_4.png";
+import rec_1 from "../images/landing/rec_1.png";
+import rec_2 from "../images/landing/rec_2.png";
+import rec_3 from "../images/landing/rec_3.png";
+import arrow_up from "../images/landing/arrow_up.png";
 import video_control from "../images/landing/video_control.png";
 
 class Landing extends Component {
@@ -58,6 +63,77 @@ class Landing extends Component {
           </div>
           <div className="landing__section-agora--media">
             <img src={pic_3} alt="" width="100%" />
+          </div>
+        </section>
+        <section className="landing__section-startzone">
+          <div className="landing__section-startzone--media">
+            <img src={pic_4} alt="" width="100%" />
+          </div>
+          <div className="landing__section-startzone--text">
+            <h1>StartZone</h1>
+            <p>
+              The business environment is harsh for early stage businesses. We
+              can help you rise above it all.
+            </p>
+            <a href="#">Here's how</a>
+          </div>
+        </section>
+        <section className="landing__section-other-things-we-do">
+          <div className="landing__section-other-things-we-do__media-plus-text">
+            <div className="landing__section-other-things-we-do__media-plus-text__first-half">
+              <img src={rec_1} alt="" />
+              <p>Genesys Ignite</p>
+            </div>
+            <div className="landing__section-other-things-we-do__media-plus-text__second-half">
+              <div className="landing__section-other-things-we-do__media-plus-second-half-one">
+                <img src={rec_2} alt="" />
+                <p>CodeVille</p>
+              </div>
+              <div className="landing__section-other-things-we-do__media-plus-second-half-two">
+                <img src={rec_3} alt="" />
+                <p>Pink summer of code</p>
+              </div>
+            </div>
+          </div>
+          <div className="landing__section-other-things-we-do__text">
+            <h1>Other things we do</h1>
+          </div>
+        </section>
+        <section className="landing__section-best-team-in-the-world">
+          <div className="landing__section-best-team-in-the-world--text">
+            <h1>The best team in the world</h1>
+            <p>
+              We work with the most amazing people our industry has to offer.
+              They are really passionate about making a difference
+            </p>
+            <a href="#">See team</a>
+          </div>
+          <div className="landing__section-best-team-in-the-world--media">
+            <img src={pic_3} alt="" width="100%" />
+          </div>
+        </section>
+        <section className="landing__section-stay-up-to-date">
+          <div className="landing__section-stay-up-to-date__arrow-up">
+            <img src={arrow_up} alt="" />
+          </div>
+          <div className="landing__section-stay-up-to-date__text">
+            <h1 className="landing__section-stay-up-to-date__text--heading">
+              Stay up to date on what we are doing and new learning
+              opportunities
+            </h1>
+            <div className="landing__section-stay-up-to-date__text--middle">
+              <input
+              className='landing__section-stay-up-to-date__text--middle-input'
+                type="email"
+                name="email"
+                id="email"
+                placeholder="YOUR EMAIL"
+              />
+              <p>View Privacy Policy</p>
+            </div>
+            <button className="landing__section-stay-up-to-date__text--button">
+              subscribe
+            </button>
           </div>
         </section>
       </React.Fragment>

@@ -6,6 +6,7 @@ import "./font_awesome/css/all.css";
 import "./font_awesome/css/all.min.css";
 import { Switch, Route, Redirect } from "react-router-dom";
 import Landing from "./components/landing";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Switch>
         <Route path="/" component={Landing} />
       </Switch>
+      <Footer />
     </React.Fragment>
   );
 }
