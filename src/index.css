@@ -35,6 +35,13 @@ code {
   justify-content: space-between;
   align-items: center;
 }
+.navbar a {
+  text-decoration: none;
+}
+.navbar a:focus,
+.navbar a:visited {
+  color: red;
+}
 .navbar li {
   display: block;
   margin: 10px;
@@ -435,15 +442,18 @@ code {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 100px 0;
-  background-color: #ddd;
+  padding: 0;
+  background-color: darkblue;
+  color: white;
 }
 .landing__section-best-team-in-the-world--media {
   flex: 0 0 45%;
+  padding: 100px;
+  box-sizing: border-box;
 }
 .landing__section-best-team-in-the-world--text {
   flex: 0 0 45%;
-  margin-left: 0px;
+  /* margin-left: 50px; */
   padding: 40px;
   padding-left: 0px;
   box-sizing: border-box;
@@ -565,16 +575,20 @@ code {
   }
 }
 
+.footer {
+  padding: 100px 0;
+}
 .footer-flex-section {
   display: flex;
-  padding: 100px 50px;
+  padding: 50px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-.footer-flex-section__link{
+.footer-flex-section__link {
   text-transform: uppercase;
   font-size: 20px;
 }
-.footer-flex-section__paragraph{
+.footer-flex-section__paragraph {
   font-size: 18px;
 }
 .footer-flex-section-one {
@@ -597,11 +611,85 @@ code {
   flex: 0 0 30%;
   display: flex;
 }
-.footer-flex-section-three__image{
+.footer-flex-section-three__image {
   margin-right: 20px;
 }
 .footer-flex-section-three-text {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+@media screen and (max-width: 960px) {
+  .footer-flex-section-one {
+    margin-bottom: 20px;
+    flex: 0 0 100%;
+  }
+  .footer-flex-section-two {
+    margin-bottom: 20px;
+    flex: 0 0 100%;
+  }
+  .footer-flex-section-three {
+    flex: 0 0 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.footer-links-section {
+  padding: 20px;
+  text-align: center;
+}
+.footer-links-section__link {
+  margin: 20px;
+}
+.footer-copyrights-section {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.footer-copyrights-section-one {
+  margin-right: 20px;
+}
+
+.learnable-section-navs {
+  display: flex;
+  justify-content: center;
+  background-color: darkblue;
+}
+.learnable-section-navs__link {
+  color: #fff;
+  margin: 20px;
+  text-transform: uppercase;
+}
+.learnable-section-navs__link:focus {
+  color: yellow;
+}
+
+.section-learnable-coming-soon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: yellow;
+}
+.section-learnable-coming-soon-one {
+  flex: 0 0 40%;
+  padding: 50px ;
+  box-sizing: border-box;
+}
+.section-learnable-coming-soon-one__heading {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.section-learnable-coming-soon-two {
+  flex: 0 0 40%;
+  padding: 50px ;
+  box-sizing: border-box;
+}
+.section-learnable-coming-soon-two__link,
+.section-learnable-coming-soon-two__link:active {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
 }

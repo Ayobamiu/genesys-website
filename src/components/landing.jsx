@@ -4,6 +4,7 @@ import pic_1 from "../images/landing/pic_1.png";
 import pic_2 from "../images/landing/pic_2.png";
 import pic_3 from "../images/landing/pic_3.png";
 import pic_4 from "../images/landing/pic_4.png";
+import pic_5 from "../images/landing/pic_5.png";
 import rec_1 from "../images/landing/rec_1.png";
 import rec_2 from "../images/landing/rec_2.png";
 import rec_3 from "../images/landing/rec_3.png";
@@ -100,6 +101,9 @@ class Landing extends Component {
           </div>
         </section>
         <section className="landing__section-best-team-in-the-world">
+          <div className="landing__section-best-team-in-the-world--media">
+            <img src={pic_5} alt="" width="100%" />
+          </div>
           <div className="landing__section-best-team-in-the-world--text">
             <h1>The best team in the world</h1>
             <p>
@@ -107,9 +111,6 @@ class Landing extends Component {
               They are really passionate about making a difference
             </p>
             <a href="#">See team</a>
-          </div>
-          <div className="landing__section-best-team-in-the-world--media">
-            <img src={pic_3} alt="" width="100%" />
           </div>
         </section>
         <section className="landing__section-stay-up-to-date">

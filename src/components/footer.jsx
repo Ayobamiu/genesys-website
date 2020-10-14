@@ -44,13 +44,12 @@ class Footer extends Component {
             </a>
           </div>
           <div className="footer-flex-section-three">
-            <div>
-              <img
-                src={footer}
-                alt=""
-                className="footer-flex-section-three__image"
-              />
-            </div>
+            <img
+              src={footer}
+              alt=""
+              className="footer-flex-section-three__image"
+            />
+
             <div className="footer-flex-section-three-text">
               <p className="footer-flex-section__paragraph">
                 Learnable is proud to be a collaborative effort of all the arms
@@ -62,8 +61,18 @@ class Footer extends Component {
             </div>
           </div>
         </div>
-        <div className="footer-links-section"></div>
-        <div className="footer-copyrights-section"></div>
+        <div className="footer-links-section">
+          <i className="fab fa-twitter fa-2x footer-links-section__link"></i>
+          <i className="fab fa-facebook fa-2x footer-links-section__link"></i>
+          <i className="fab fa-linkedin fa-2x footer-links-section__link"></i>
+          <i className="fab fa-instagram fa-2x footer-links-section__link"></i>
+          <i className="fab fa-youtube fa-2x footer-links-section__link"></i>
+          <i className="fab fa-vimeo fa-2x footer-links-section__link"></i>
+        </div>
+        <div className="footer-copyrights-section">
+          <p className="footer-copyrights-section-one">&copy; Genesys 2020 </p>{" "}
+          <p className="footer-copyrights-section-two">Privacy Statement</p>
+        </div>
       </div>
     );
   }

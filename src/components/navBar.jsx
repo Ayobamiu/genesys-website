@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../images/learnable/genesys_logo.png";
 
 class NavBar extends Component {
@@ -15,10 +16,14 @@ class NavBar extends Component {
     return (
       <React.Fragment>
         <ul className="navbar">
-          <li className="logo">
-            <img src={logo} />
-          </li>
-          <li className="item">learnable</li>
+          <NavLink to="/">
+            <li className="logo">
+              <img src={logo} />
+            </li>
+          </NavLink>
+          <NavLink to="/learnable">
+            <li className="item">learnable</li>
+          </NavLink>
           <li className="item">agora</li>
           <li className="item">startzone</li>
           <li className="item">about</li>
