@@ -40,6 +40,7 @@ class Landing extends Component {
             </div>
           </div>
         </section>
+    
         <section className="landing__section-learnable">
           <div className="landing__section-learnable--media">
             <img src={pic_2} alt="" width="100%" />

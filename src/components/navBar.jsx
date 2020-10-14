@@ -5,6 +5,12 @@ import logo from "../images/learnable/genesys_logo.png";
 class NavBar extends Component {
   state = {};
   handleToggle = () => {
+    const toggle = document.getElementById("toggle");
+    if (toggle.classList.contains("fa-bars")) {
+      toggle.classList.replace("fa-bars", "fa-times");
+    }else{
+      toggle.classList.replace("fa-times", "fa-bars");
+    }
     const navbar = document.querySelector(".navbar");
     if (navbar.classList.contains("active")) {
       navbar.classList.remove("active");
@@ -16,13 +22,13 @@ class NavBar extends Component {
     return (
       <React.Fragment>
         <ul className="navbar">
-          <NavLink to="/">
-            <li className="logo">
+          <NavLink className="logo" to="/">
+            <li>
               <img src={logo} />
             </li>
           </NavLink>
-          <NavLink to="/learnable">
-            <li className="item">learnable</li>
+          <NavLink className="item" to="/learnable">
+            <li>learnable</li>
           </NavLink>
           <li className="item">agora</li>
           <li className="item">startzone</li>
@@ -35,7 +41,7 @@ class NavBar extends Component {
             </a>
           </li>
           <li onClick={this.handleToggle} className="toggle">
-            <i className="fa fa-bars"></i>
+            <i className="fa fa-bars" id='toggle'></i>
           </li>
         </ul>
       </React.Fragment>
