@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import pic_1 from "../images/learnable/pic_1.png";
-import pic_2 from "../images/learnable/pic_2.png";
+import pic_2 from "../images/learnable/pic_2.png"; 
 import pic_3 from "../images/learnable/pic_3.png";
 import pic_4 from "../images/learnable/pic_4.png";
 import pic_5 from "../images/learnable/pic_5.png";
@@ -653,6 +653,7 @@ class Home extends Component {
               </small>
             </div>
           </div>
+       
         </section>
 
         <section className="learnable-home-section-mentioned-in">

@@ -2009,6 +2009,7 @@ code {
 }
 .learnable-home-section-journal--journal {
   flex: 0 0 23%;
+  margin-bottom: 50px;
 }
 .learnable-home-section-journal--journal--image {
   width: 100%;
@@ -2058,6 +2059,467 @@ code {
   height: 30px;
 }
 
-.landing__section-stay-up-to-date--yellow{
+.landing__section-stay-up-to-date--yellow {
   background-color: yellow;
+}
+
+.learnable-software-section-learnable-software-developer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+.learnable-software-section-learnable-software-developer--text {
+  flex: 0 0 45%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.learnable-software-section-learnable-software-developer--media {
+  flex: 0 0 45%;
+  border-radius: 50%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.learnable-software-section-learnable-software-developer--media--image {
+  height: 500px;
+  width: 500px;
+  background-color: green;
+  border-radius: 50%;
+}
+.learnable-software-section-learnable-software-developer--text--head {
+  font-size: 100px;
+}
+.learnable-software-section-learnable-software-developer--text--para {
+  font-size: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .learnable-software-section-learnable-software-developer {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .learnable-software-section-learnable-software-developer--text {
+    flex: 0 0 60%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .learnable-software-section-learnable-software-developer--media {
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .learnable-software-section-learnable-software-developer--media--image {
+    height: 400px;
+    width: 400px;
+  }
+  .learnable-software-section-learnable-software-developer--text--head {
+    font-size: 50px;
+  }
+  .learnable-software-section-learnable-software-developer--text--para {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .learnable-software-section-learnable-software-developer {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .learnable-software-section-learnable-software-developer--text {
+    flex: 0 0 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .learnable-software-section-learnable-software-developer--media {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .learnable-software-section-learnable-software-developer--media--image {
+    height: 300px;
+    width: 300px;
+  }
+  .learnable-software-section-learnable-software-developer--text--head {
+    font-size: 50px;
+  }
+  .learnable-software-section-learnable-software-developer--text--para {
+    font-size: 20px;
+  }
+}
+
+.learnable-software-section-someone-to-count-on {
+  width: 60%;
+  padding: 50px 100px;
+}
+.learnable-software-section-someone-to-count-on--text {
+  font-size: 70px;
+  line-height: 80px;
+  color: green;
+}
+@media screen and (max-width: 600px) {
+  .learnable-software-section-someone-to-count-on {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .learnable-software-section-someone-to-count-on--text {
+    font-size: 40px;
+    line-height: 50px;
+    color: green;
+  }
+}
+.learnable-software-computer-section-image {
+  width: 60%;
+  margin: auto;
+}
+.learnable-software-computer-section-image--image {
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .learnable-software-computer-section-image {
+    width: 100%;
+    margin: auto;
+  }
+}
+.learnable-software-section-we-expect-you-to {
+  width: 40%;
+  margin: auto;
+}
+.learnable-software-section-we-expect-you-to--head {
+  font-size: 50px;
+}
+.learnable-software-section-we-expect-you-to--para {
+  font-size: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+@media screen and (max-width: 600px) {
+  .learnable-software-section-we-expect-you-to {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .learnable-software-section-we-expect-you-to--head {
+    font-size: 40px;
+  }
+}
+.learnable-product-designer-section-learnable-software-developer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+.learnable-product-designer-section-learnable-software-developer--text {
+  flex: 0 0 45%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.learnable-product-designer-section-learnable-software-developer--media {
+  flex: 0 0 45%;
+  border-radius: 50%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.learnable-product-designer-section-learnable-software-developer--media--image {
+  height: 500px;
+  width: 500px;
+  background-color: orangered;
+  border-radius: 50%;
+}
+.learnable-product-designer-section-learnable-software-developer--text--head {
+  font-size: 100px;
+}
+.learnable-product-designer-section-learnable-software-developer--text--para {
+  font-size: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .learnable-product-designer-section-learnable-software-developer {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .learnable-product-designer-section-learnable-software-developer--text {
+    flex: 0 0 60%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .learnable-product-designer-section-learnable-software-developer--media {
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .learnable-product-designer-section-learnable-software-developer--media--image {
+    height: 400px;
+    width: 400px;
+  }
+  .learnable-product-designer-section-learnable-software-developer--text--head {
+    font-size: 50px;
+  }
+  .learnable-product-designer-section-learnable-software-developer--text--para {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .learnable-product-designer-section-learnable-software-developer {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .learnable-product-designer-section-learnable-software-developer--text {
+    flex: 0 0 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .learnable-product-designer-section-learnable-software-developer--media {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .learnable-product-designer-section-learnable-software-developer--media--image {
+    height: 300px;
+    width: 300px;
+  }
+  .learnable-product-designer-section-learnable-software-developer--text--head {
+    font-size: 50px;
+  }
+  .learnable-product-designer-section-learnable-software-developer--text--para {
+    font-size: 20px;
+  }
+}
+
+.learnable-product-designer-section-someone-to-count-on {
+  width: 60%;
+  padding: 50px 100px;
+}
+.learnable-product-designer-section-someone-to-count-on--text {
+  font-size: 70px;
+  line-height: 80px;
+  color: orangered;
+}
+@media screen and (max-width: 600px) {
+  .learnable-product-designer-section-someone-to-count-on {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .learnable-product-designer-section-someone-to-count-on--text {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+.learnable-product-designer-computer-section-image {
+  width: 60%;
+  margin: auto;
+}
+.learnable-product-designer-computer-section-image--image {
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .learnable-product-designer-computer-section-image {
+    width: 100%;
+    margin: auto;
+  }
+}
+.learnable-product-designer-section-we-expect-you-to {
+  width: 40%;
+  margin: 50px auto;
+}
+.learnable-product-designer-section-we-expect-you-to--head {
+  font-size: 50px;
+}
+.learnable-product-designer-section-we-expect-you-to--para {
+  font-size: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+@media screen and (max-width: 600px) {
+  .learnable-product-designer-section-we-expect-you-to {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .learnable-product-designer-section-we-expect-you-to--head {
+    font-size: 40px;
+  }
+}
+
+.learnable-apply-section-apply-your-knowledge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.learnable-apply-section-apply-your-knowledge--text {
+  flex: 0 0 50%;
+  padding: 100px;
+  box-sizing: border-box;
+}
+.learnable-apply-section-apply-your-knowledge--text--head {
+  font-size: 100px;
+}
+.learnable-apply-section-apply-your-knowledge--text--para {
+  font-size: 20px;
+}
+.learnable-apply-section-apply-your-knowledge--media {
+  padding: 50px;
+  box-sizing: border-box;
+}
+.learnable-apply-section-apply-your-knowledge--media--image {
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .learnable-apply-section-apply-your-knowledge--text {
+    flex: 0 0 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .learnable-apply-section-apply-your-knowledge--text--head {
+    font-size: 50px;
+  }
+  .learnable-apply-section-apply-your-knowledge--text--para {
+    font-size: 20px;
+  }
+  .learnable-apply-section-apply-your-knowledge--media {
+    padding: 0px;
+    box-sizing: border-box;
+  }
+}
+.learnable-apply-section-image {
+  width: 60%;
+  margin: auto;
+}
+.learnable-apply-section-image--image {
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .learnable-apply-section-image {
+    width: 100%;
+    margin: auto;
+  }
+}
+.learnable-apply-section-texts {
+  width: 40%;
+  margin: 50px auto;
+}
+.learnable-apply-section-text--text {
+  margin: 50px 0;
+}
+.learnable-apply-section-text--text--head {
+  font-size: 40px;
+}
+.learnable-apply-section-text--text--para {
+  font-size: 20px;
+}
+.learnable-apply-section-text--text--link {
+  font-size: 20px;
+}
+
+.learnable-journal-section-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+  margin: 100px;
+  background-color: #ddd;
+}
+.learnable-journal-section-one--head {
+  font-size: 100px;
+}
+.learnable-journal-section-one--button {
+  padding: 15px 30px;
+  background-color: transparent;
+  border: solid 1px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+.learnable-journal-section-learn-like-a-pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  margin-top: -12%;
+  margin-bottom: 50px;
+}
+
+.learnable-journal-section-learn-like-a-pro--media {
+  flex: 0 0 50%;
+}
+.learnable-journal-section-learn-like-a-pro--media--image {
+  width: 100%;
+}
+.learnable-journal-section-learn-like-a-pro--text {
+  flex: 0 0 40%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.learnable-journal-section-learn-like-a-pro--text--link {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  display: block;
+}
+.learnable-journal-section-learn-like-a-pro--text--head {
+  font-size: 50px;
+  line-height: 50px;
+}
+.learnable-journal-section-learn-like-a-pro--text--para {
+  font-size: 20px;
+}
+.learnable-journal-section-learn-like-a-pro--text--profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.learnable-journal-section-learn-like-a-pro--text--profile--image {
+  margin-right: 20px;
+}
+@media screen and (max-width: 600px) {
+  .learnable-journal-section-one {
+    padding: 10px;
+    margin: 0px;
+    background-color: #ddd;
+  }
+  .learnable-journal-section-one--head {
+    font-size: 40px;
+  }
+  .learnable-journal-section-one--button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: solid 1px;
+    font-weight: 700;
+    border-radius: 5px;
+  }
+  .learnable-journal-section-learn-like-a-pro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 0px;
+    margin-top: 0;
+  }
+
+  .learnable-journal-section-learn-like-a-pro--media {
+    flex: 0 0 100%;
+  }
+  .learnable-journal-section-learn-like-a-pro--text {
+    flex: 0 0 100%;
+    padding: 10px;
+  }
+}
+
+.learnable-journal-section-journals {
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.learnable-journal-section-journals-load-more-button {
+  font-weight: 700;
+  display: block;
+  margin: auto;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: solid 1px;
+  border-radius: 5px;
+  text-transform: uppercase;
 }

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {  Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Home from "./home";
 import SoftwareDevelopers from "./softwareDevelopers";
 import ProductDesigners from "./productDesigners";
@@ -13,7 +13,7 @@ class Learnable extends Component {
   render() {
     return (
       <div className="learnable">
-       <LearnableNavBar/>
+        <LearnableNavBar />
         <Switch>
           <Route
             path="/learnable/software-developers"

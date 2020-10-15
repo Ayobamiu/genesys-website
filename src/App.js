@@ -4,10 +4,11 @@ import "./App.css";
 import NavBar from "./components/navBar";
 import "./font_awesome/css/all.css";
 import "./font_awesome/css/all.min.css";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import Landing from "./components/landing";
 import Footer from "./components/footer";
 import Learnable from "./components/learnable";
+import SoftwareDevelopers from "./components/softwareDevelopers";
 
 function App() {
   return (
