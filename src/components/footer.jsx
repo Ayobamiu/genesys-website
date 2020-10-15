@@ -3,7 +3,7 @@ import footer from "../images/landing/footer.png";
 
 class Footer extends Component {
   state = {};
-  render() {
+  render() { 
     return (
       <div className="footer">
         <div className="footer-flex-section">

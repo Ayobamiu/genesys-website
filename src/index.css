@@ -1,10 +1,14 @@
+:root {
+  --gun-metal: #273043;
+  --vivid-tangelo: #f5772f;
+  --space-cadet: #17255a;
+  --saffron: #eac435;
+  --isabeline: #eeeeee;
+  --carribean-green: #03cea4;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
 }
 
 code {
@@ -37,10 +41,11 @@ code {
 }
 .navbar a {
   text-decoration: none;
+  color: var(--space-cadet);
 }
 .navbar a:focus,
 .navbar a:visited {
-  color: red;
+  color: var(--vivid-tangelo);
 }
 .navbar li {
   display: block;
@@ -53,8 +58,10 @@ code {
   order: 3;
   width: 100%;
   display: none;
-  font-size: 16px;
-  font-weight: 500;
+  color: var(--gun-metal);
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .active .item {
@@ -129,15 +136,18 @@ code {
 .landing__section-one--text {
   width: 40%;
   padding: 100px;
+  font-family: "Roboto", sans-serif;
+  color: var(--space-cadet);
 }
 .landing__section-one--text-big {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 30px;
-  line-height: 40px;
+  line-height: 44.08px;
 }
 .landing__section-one--text-small {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
 }
 @media screen and (max-width: 1200px) {
   .landing__section-one--text {
@@ -148,9 +158,6 @@ code {
   .landing__section-one--text-big {
     font-size: 30px;
     line-height: 35px;
-  }
-  .landing__section-one--text-small {
-    font-size: 16px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -234,16 +241,19 @@ code {
   flex: 0 0 45%;
 }
 .landing__section-learnable--text {
+  color: var(--gun-metal);
   flex: 0 0 45%;
   margin-left: 50px;
   padding: 40px;
   box-sizing: border-box;
 }
 .landing__section-learnable--text h1 {
+  font-weight: 900;
   font-size: 40px;
 }
 .landing__section-learnable--text p {
-  font-size: 18px;
+  font-size: 15px;
+  font-weight: 400;
 }
 .landing__section-learnable--text a {
   font-size: 20px;
@@ -269,7 +279,7 @@ code {
   align-items: center;
   flex-wrap: wrap;
   padding: 100px 0;
-  background-color: #ddd;
+  background-color: var(--isabeline);
 }
 .landing__section-agora--media {
   flex: 0 0 45%;
@@ -283,13 +293,16 @@ code {
 }
 .landing__section-agora--text h1 {
   font-size: 40px;
+  font-weight: 900;
 }
 .landing__section-agora--text p {
-  font-size: 18px;
+  font-size: 15px;
+  font-weight: 400;
 }
 .landing__section-agora--text a {
   font-size: 20px;
   text-transform: uppercase;
+  color: var(--carribean-green);
 }
 @media screen and (max-width: 600px) {
   .landing__section-agora {
@@ -324,13 +337,17 @@ code {
 }
 .landing__section-startzone--text h1 {
   font-size: 40px;
+  font-weight: 900;
 }
 .landing__section-startzone--text p {
-  font-size: 18px;
+  font-size: 15px;
+  font-weight: 400;
 }
 .landing__section-startzone--text a {
-  font-size: 20px;
+  font-size: 15px;
+  font-weight: 600;
   text-transform: uppercase;
+  color: var(--carribean-green);
 }
 @media screen and (max-width: 600px) {
   .landing__section-startzone {
@@ -351,6 +368,7 @@ code {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  color: var(--space-cadet);
 }
 .landing__section-other-things-we-do__media-plus-text {
   flex: 0 0 50%;
@@ -360,10 +378,14 @@ code {
   box-sizing: border-box;
 }
 .landing__section-other-things-we-do__media-plus-text p {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 34px;
+  font-weight: 900;
   text-decoration: underline;
   padding: 0 100px 50px 0;
+}
+.landing__section-other-things-we-do__text--big {
+  font-size: 60px;
+  font-weight: 900;
 }
 .landing__section-other-things-we-do__media-plus-text__first-half {
   display: flex;
@@ -443,8 +465,8 @@ code {
   align-items: center;
   flex-wrap: wrap;
   padding: 0;
-  background-color: darkblue;
-  color: white;
+  background-color: var(--space-cadet);
+  color: var(--isabeline);
 }
 .landing__section-best-team-in-the-world--media {
   flex: 0 0 45%;
@@ -460,13 +482,17 @@ code {
 }
 .landing__section-best-team-in-the-world--text h1 {
   font-size: 40px;
+  font-weight: 900;
+  text-transform: capitalize;
 }
 .landing__section-best-team-in-the-world--text p {
-  font-size: 18px;
+  font-size: 15px;
+  font-weight: 400;
 }
 .landing__section-best-team-in-the-world--text a {
   font-size: 20px;
   text-transform: uppercase;
+  color: var(--carribean-green);
 }
 @media screen and (max-width: 600px) {
   .landing__section-best-team-in-the-world {
@@ -484,6 +510,7 @@ code {
 }
 .landing__section-stay-up-to-date {
   display: flex;
+  color: var(--gun-metal);
 }
 .landing__section-stay-up-to-date__arrow-up {
   flex: 0 0 10%;
@@ -492,7 +519,7 @@ code {
   align-items: center;
 }
 .landing__section-stay-up-to-date--green {
-  background-color: green;
+  background-color: var(--carribean-green);
 }
 .landing__section-stay-up-to-date__text {
   flex: 1;
@@ -502,26 +529,29 @@ code {
 }
 
 .landing__section-stay-up-to-date__text--heading {
-  font-size: 40px;
-  line-height: 40px;
-  font-weight: 700;
+  font-size: 34px;
+  line-height: 37.46px;
+  font-weight: 900;
   flex: 0 0 60%;
   text-transform: capitalize;
   padding: 100px 30px;
   box-sizing: border-box;
-  /* padding-left: 50px; */
 }
 .landing__section-stay-up-to-date__text--middle {
   flex: 0 0 20%;
+}
+.landing__section-stay-up-to-date__text--middle p {
+  font-size: 13px;
+  font-weight: 400;
 }
 .landing__section-stay-up-to-date__text--middle-input {
   background-color: transparent;
   border: none;
   padding: 10px 0;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--gun-metal);
 }
 .landing__section-stay-up-to-date__text--middle-input::placeholder {
-  color: #000;
+  color: var(--gun-metal);
 }
 .landing__section-stay-up-to-date__text--button {
   text-transform: uppercase;
@@ -529,7 +559,8 @@ code {
   background-color: transparent;
   border: solid 1px;
   border-radius: 5px;
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 14px;
 }
 @media screen and (max-width: 960px) {
   .landing__section-stay-up-to-date {
@@ -552,14 +583,9 @@ code {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: green;
   }
   .landing__section-stay-up-to-date__text--heading {
-    font-size: 28px;
-    line-height: 28px;
-    font-weight: 700;
     flex: 0 0 100%;
-    text-transform: capitalize;
     padding: 20px;
     box-sizing: border-box;
   }
@@ -570,7 +596,7 @@ code {
     background-color: transparent;
     border: none;
     padding: 5px 0;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid var(--space-cadet);
   }
   .landing__section-stay-up-to-date__text--button {
     align-self: flex-start;
@@ -579,6 +605,7 @@ code {
 }
 
 .footer {
+  font-family: "Nunito", sans-serif;
   padding: 100px 0;
 }
 .footer-flex-section {
@@ -588,11 +615,14 @@ code {
   flex-wrap: wrap;
 }
 .footer-flex-section__link {
+  color: var(--gun-metal);
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 15px;
+  font-weight: 600;
 }
 .footer-flex-section__paragraph {
-  font-size: 18px;
+  font-size: 15px;
+  font-weight: 400;
 }
 .footer-flex-section-one {
   flex: 0 0 30%;
@@ -644,6 +674,7 @@ code {
 }
 .footer-links-section__link {
   margin: 20px;
+  color: var(--gun-metal);
 }
 .footer-copyrights-section {
   display: flex;
@@ -654,6 +685,10 @@ code {
 .footer-copyrights-section-one {
   margin-right: 20px;
 }
+.footer-copyrights-section-one p{
+  font-size: 10px;
+  font-weight: 400;
+}
 
 .learnable-home {
   box-sizing: border-box;
@@ -662,12 +697,12 @@ code {
 .learnable-section-navs {
   display: flex;
   justify-content: center;
-  background-color: darkblue;
+  background-color: var(--space-cadet);
 }
 .learnable-section-navs__toggle,
 .learnable-section-navs__home,
 .learnable-section-navs__link {
-  color: #fff;
+  color: var(--isabeline);
   margin: 20px;
   text-transform: uppercase;
 }
@@ -675,7 +710,7 @@ code {
   visibility: hidden;
 }
 .learnable-section-navs__link:focus {
-  color: yellow;
+  color: var(--saffron);
 }
 @media screen and (max-width: 840px) {
   .learnable-section-navs {
@@ -699,7 +734,8 @@ code {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  background-color: yellow;
+  background-color: var(--saffron);
+  font-family: "Roboto", sans-serif;
 }
 .section-learnable-coming-soon-one {
   flex: 0 0 40%;
@@ -2416,9 +2452,9 @@ code {
 
 .learnable-journal-section-one {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 100px;
+  padding: 80px;
   margin: 100px;
   background-color: #ddd;
 }
@@ -2510,16 +2546,90 @@ code {
 
 .learnable-journal-section-journals {
   padding: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .learnable-journal-section-journals-load-more-button {
   font-weight: 700;
   display: block;
-  margin: auto;
+  margin: 30px auto;
   padding: 10px 20px;
   background-color: transparent;
   border: solid 1px;
   border-radius: 5px;
   text-transform: uppercase;
+}
+
+.learnable-faq-section-faqs__faqs {
+  width: 40%;
+  margin: auto;
+  padding: 150px;
+}
+.learnable-faq-section-faqs--flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.learnable-faq-section-faqs--flex--head {
+  font-size: 70px;
+  margin-left: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .learnable-faq-section-faqs--flex {
+    padding: 0px;
+  }
+  .learnable-faq-section-faqs--flex--head {
+    margin-left: 10px;
+  }
+  .learnable-faq-section-faqs--flex--image {
+    width: 100%;
+  }
+}
+
+.learnable-faq-section-faqs__faq {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #000;
+}
+.learnable-faq-section-faqs__faq--link {
+  font-size: 30px;
+  color: #000;
+  font-weight: 700;
+}
+.learnable-faq-section-faqs__faq--icon {
+  transform: rotate(180deg);
+  font-size: 20px;
+  font-weight: 700;
+}
+.learnable-faq-section-faqs__faq--see-all {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .learnable-faq-section-faqs__faqs {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .learnable-faq-section-faqs--head {
+    font-size: 50px;
+    margin-left: 20px;
+  }
+
+  .learnable-faq-section-faqs__faq {
+    margin-bottom: 20px;
+  }
+  .learnable-faq-section-faqs__faq--link {
+    font-size: 18px;
+  }
+  .learnable-faq-section-faqs__faq--icon {
+    font-size: 16px;
+  }
 }

@@ -40,7 +40,7 @@ class Landing extends Component {
             </div>
           </div>
         </section>
-    
+
         <section className="landing__section-learnable">
           <div className="landing__section-learnable--media">
             <img src={pic_2} alt="" width="100%" />
@@ -98,7 +98,7 @@ class Landing extends Component {
             </div>
           </div>
           <div className="landing__section-other-things-we-do__text">
-            <h1>Other things we do</h1>
+            <h1 className='landing__section-other-things-we-do__text--big'>Other things we do</h1>
           </div>
         </section>
         <section className="landing__section-best-team-in-the-world">
@@ -125,7 +125,7 @@ class Landing extends Component {
             </h1>
             <div className="landing__section-stay-up-to-date__text--middle">
               <input
-              className='landing__section-stay-up-to-date__text--middle-input'
+                className="landing__section-stay-up-to-date__text--middle-input"
                 type="email"
                 name="email"
                 id="email"
