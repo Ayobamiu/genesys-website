@@ -47,7 +47,7 @@ code {
 .navbar-pop-up-toggle {
   position: absolute;
   top: 40px;
-  right: 40px;
+  right: 30px;
 }
 .navbar-pop-up-link {
   margin: 20px;
@@ -65,7 +65,7 @@ code {
 .navbar {
   z-index: 1;
   background-color: #fff;
-  padding: 10px 0;
+  padding: 10px 20px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -104,6 +104,7 @@ code {
 .navbar .dev {
   margin-left: auto;
   font-size: 11px;
+  display: none;
 }
 .navbar .dev_link {
   font-size: 16px;
@@ -125,6 +126,9 @@ code {
 @media screen and (min-width: 960px) {
   .navbar .logo img {
     width: 100%;
+  }
+  .navbar .dev {
+    display: block;
   }
   .navbar {
     align-items: center;
@@ -176,6 +180,11 @@ code {
   font-size: 16px;
   font-weight: 400;
 }
+.landing__section-one--text-small-hide-first {
+  padding: 30px;
+  text-align: center;
+  display: none;
+}
 @media screen and (max-width: 1200px) {
   .landing__section-one--text {
     width: 70%;
@@ -194,11 +203,18 @@ code {
     box-sizing: border-box;
   }
   .landing__section-one--text-big {
-    font-size: 25px;
-    line-height: 30px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 44.8px;
   }
   .landing__section-one--text-small {
     font-size: 13px;
+  }
+  .landing__section-one--text-small-hide-first {
+    display: block;
+  }
+  .landing__section-one--text-small-hide-later {
+    display: none;
   }
 }
 
@@ -243,13 +259,22 @@ code {
 }
 
 @media screen and (max-width: 600px) {
+  .landing__section-one--media {
+    justify-content: center;
+  }
   .landing__section-one--media__arrow_down {
     margin-bottom: 0px;
     order: 1;
     animation: breath 1s infinite;
+    display: none;
   }
   .landing__section-one--media__big_pic {
     flex: 1 100%;
+    overflow: hidden;
+  }
+  .landing__section-one--media__big_pic img {
+    width: auto;
+    height: 100%;
   }
   .landing__section-one--media__big_pic-video-control i {
     padding: 10px;
@@ -297,9 +322,21 @@ code {
     flex: 0 0 100%;
   }
   .landing__section-learnable--text {
+    text-align: center;
     flex: 0 0 100%;
     margin-left: 10px;
-    padding: 10px;
+    padding: 20px;
+  }
+  .landing__section-learnable--text h1 {
+    text-decoration: underline;
+    font-size: 24px;
+  }
+  .landing__section-learnable--text p {
+    line-height: 24.27px;
+    margin-bottom: 40px;
+  }
+  .landing__section-learnable--text a {
+    font-size: 15px;
   }
 }
 
@@ -347,7 +384,19 @@ code {
   .landing__section-agora--text {
     flex: 0 0 100%;
     margin-left: 10px;
-    padding: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  .landing__section-agora--text h1 {
+    font-size: 24px;
+    text-decoration: underline;
+  }
+  .landing__section-agora--text p {
+    line-height: 24.27px;
+    margin-bottom: 40px;
+  }
+  .landing__section-agora--text a {
+    font-size: 15px;
   }
 }
 
@@ -375,6 +424,7 @@ code {
 .landing__section-startzone--text p {
   font-size: 15px;
   font-weight: 400;
+
   color: var(--gun-metal);
 }
 .landing__section-startzone--text a {
@@ -393,7 +443,16 @@ code {
   .landing__section-startzone--text {
     flex: 0 0 100%;
     margin-left: 10px;
-    padding: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  .landing__section-startzone--text h1 {
+    font-size: 24px;
+    text-decoration: underline;
+  }
+  .landing__section-startzone--text p {
+    line-height: 24.27px;
+    margin-bottom: 40px;
   }
 }
 
@@ -438,13 +497,18 @@ code {
 .landing__section-other-things-we-do__media-plus-second-half-two {
   margin: 15px;
 }
+.landing__section-other-things-we-do__text--big {
+  font-size: 50px;
+}
 .landing__section-other-things-we-do__text {
   flex: 0 0 50%;
-  font-size: 50px;
   padding: 100px;
   box-sizing: border-box;
 }
 @media screen and (max-width: 1200px) {
+  .landing__section-other-things-we-do {
+    background-color: var(--isabeline);
+  }
   .landing__section-other-things-we-do__media-plus-text {
     flex: 0 0 70%;
   }
@@ -456,8 +520,9 @@ code {
 @media screen and (max-width: 600px) {
   .landing__section-other-things-we-do__media-plus-text {
     flex: 0 0 100%;
-    padding: 0px;
+    padding: 0 50px;
     box-sizing: border-box;
+    text-align: center;
   }
   .landing__section-other-things-we-do__media-plus-text p {
     padding: 0;
@@ -468,6 +533,8 @@ code {
   .landing__section-other-things-we-do__media-plus-text__first-half {
     box-sizing: border-box;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   .landing__section-other-things-we-do__media-plus-text__first-half img,
   .landing__section-other-things-we-do__media-plus-text__first-half p {
@@ -485,10 +552,13 @@ code {
     flex: 100%;
     margin: 0px;
   }
+  .landing__section-other-things-we-do__text--big {
+    font-size: 30px;
+  }
   .landing__section-other-things-we-do__text {
     flex: 0 0 100%;
-    font-size: 30px;
-    padding: 30px 20px;
+    padding: 30px 0;
+    text-align: center;
     order: -1;
   }
 }
@@ -535,11 +605,24 @@ code {
   .landing__section-best-team-in-the-world--media {
     flex: 0 0 100%;
     order: -1;
+    padding: 0;
   }
   .landing__section-best-team-in-the-world--text {
     flex: 0 0 100%;
     margin-left: 10px;
-    padding: 10px;
+    padding: 30px;
+    text-align: center;
+  }
+  .landing__section-best-team-in-the-world--text h1 {
+    font-size: 34px;
+  }
+  .landing__section-best-team-in-the-world--text p {
+    font-family: "Nunito", sans-serif;
+    line-height: 24.27px;
+    margin-bottom: 40px;
+  }
+  .landing__section-best-team-in-the-world--text a {
+    font-size: 15px;
   }
 }
 .landing__section-stay-up-to-date {
@@ -596,51 +679,59 @@ code {
   font-weight: 500;
   font-size: 14px;
 }
+.landing__section-stay-up-to-date__text--hidden {
+  display: none;
+}
 @media screen and (max-width: 960px) {
   .landing__section-stay-up-to-date {
     flex-wrap: wrap;
     position: relative;
+    text-align: center;
   }
   .landing__section-stay-up-to-date__arrow-up {
-    flex: 0 0 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    right: 20px;
-    animation: breath 1s infinite;
+    display: none;
   }
   .landing__section-stay-up-to-date__text {
     flex: 1 0 100%;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
   }
   .landing__section-stay-up-to-date__text--heading {
     flex: 0 0 100%;
     padding: 20px;
     box-sizing: border-box;
+    font-size: 24px;
+    line-height: 26.45px;
+    text-decoration: underline;
   }
   .landing__section-stay-up-to-date__text--middle {
-    flex: 0 0 50%;
+    flex: 1 0 100%;
+  }
+  .landing__section-stay-up-to-date__text--middle p {
+    display: none;
   }
   .landing__section-stay-up-to-date__text--middle-input {
-    background-color: transparent;
-    border: none;
     padding: 5px 0;
-    border-bottom: 1px solid var(--space-cadet);
+    width: 70%;
+    font-size: 10px;
+    margin-bottom: 30px;
   }
   .landing__section-stay-up-to-date__text--button {
     align-self: flex-start;
-    margin-left: 5px;
+    margin: 30px 0;
+  }
+  .landing__section-stay-up-to-date__text--hidden {
+    font-family: "Nunito", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    width: 100%;
+    display: block;
   }
 }
 
 .footer {
   font-family: "Nunito", sans-serif;
   padding: 100px 0;
+  background-color: var(--isabeline);
 }
 .footer-flex-section {
   display: flex;
@@ -687,6 +778,10 @@ code {
   justify-content: flex-end;
 }
 @media screen and (max-width: 960px) {
+  .footer {
+    text-align: center;
+    padding: 40px 0;
+  }
   .footer-flex-section-one {
     margin-bottom: 20px;
     flex: 0 0 100%;
@@ -699,16 +794,34 @@ code {
     flex: 0 0 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-flex-section-three__image {
+    margin-right: 0px;
+    margin-bottom: 40px;
+    margin-top: 40px;
   }
 }
 
 .footer-links-section {
   padding: 20px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .footer-links-section__link {
   margin: 20px;
   color: var(--gun-metal);
+}
+
+@media screen and (max-width: 960px) {
+  .footer-links-section {
+    padding: 0px;
+  }
+  .footer-links-section__link {
+    margin: 5px;
+  }
 }
 .footer-copyrights-section {
   display: flex;
@@ -764,12 +877,19 @@ code {
 }
 
 .section-learnable-coming-soon {
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   background-color: var(--saffron);
   color: var(--space-cadet);
+}
+.close-coming-soon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none;
 }
 .section-learnable-coming-soon-one {
   flex: 0 0 40%;
@@ -778,6 +898,7 @@ code {
 }
 .section-learnable-coming-soon-one__heading {
   font-size: 40px;
+  font-weight: 900;
   text-transform: capitalize;
 }
 .section-learnable-coming-soon-two {
@@ -786,6 +907,7 @@ code {
   box-sizing: border-box;
 }
 .section-learnable-coming-soon-one__paragraph {
+  font-family: "Nunito", sans-serif;
   font-size: 15px;
   font-weight: 400;
 }
@@ -796,6 +918,9 @@ code {
   color: var(--space-cadet);
 }
 @media screen and (max-width: 1000px) {
+  .section-learnable-coming-soon {
+    text-align: center;
+  }
   .section-learnable-coming-soon-one {
     flex: 0 0 90%;
     padding: 50px;
@@ -803,6 +928,12 @@ code {
   .section-learnable-coming-soon-two {
     flex: 0 0 90%;
     padding: 50px;
+  }
+  .section-learnable-coming-soon-two__link,
+  .section-learnable-coming-soon-two__link:active {
+    font-size: 20px;
+    margin-bottom: 30px;
+    display: block;
   }
 }
 @media screen and (max-width: 600px) {
@@ -813,14 +944,6 @@ code {
   .section-learnable-coming-soon-two {
     flex: 0 0 100%;
     padding: 20px;
-  }
-  .section-learnable-coming-soon-one__heading {
-    font-size: 30px;
-    text-transform: capitalize;
-  }
-  .section-learnable-coming-soon-two__link,
-  .section-learnable-coming-soon-two__link:active {
-    font-size: 30px;
   }
 }
 
@@ -857,8 +980,10 @@ code {
 }
 @media screen and (max-width: 700px) {
   .learnable-home-section-everything-is-learnable-one--text {
+    text-align: center;
+
     width: 100%;
-    padding: 10px;
+    padding: 50px 10px;
     box-sizing: border-box;
   }
   .learnable-home-section-everything-is-learnable-one--text-big {
@@ -866,6 +991,7 @@ code {
     line-height: 45px;
   }
   .learnable-home-section-everything-is-learnable-one--text-small {
+    font-family: "Nunito", sans-serif;
     font-size: 16px;
   }
 }
@@ -910,6 +1036,7 @@ code {
 }
 .learnable-home-section-everything-is-learnable-one--media__big_pic-video-control
   small {
+  text-align: center;
   color: var(--isabeline);
 }
 
@@ -921,9 +1048,15 @@ code {
     z-index: 3;
     order: -1;
     animation: breath 1s infinite;
+    display: none;
   }
   .learnable-home-section-everything-is-learnable-one--media__big_pic {
-    flex: 1 100%;
+    flex: 100%;
+    overflow: hidden;
+  }
+  .learnable-home-section-everything-is-learnable-one--media__big_pic img {
+    width: auto;
+    height: 400px;
   }
   .learnable-home-section-everything-is-learnable-one--media__big_pic-video-control
     i {
@@ -990,35 +1123,58 @@ code {
 
 @media screen and (max-width: 900px) {
   .learnable-home-section-everything-is-learnable-one--media__green-circle {
+    margin: 50px 5px;
+    margin-top: 0;
+
     position: static;
-    height: 400px;
-    width: 100%;
-    top: auto;
+    height: 170px;
+    width: 170px;
     z-index: 2;
-    right: auto;
-    border-radius: 0%;
+    border-radius: 50%;
     box-shadow: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
   }
 
   .learnable-home-section-everything-is-learnable-one--media__blue-circle {
+    margin: 50px 5px;
+    margin-top: 0;
     position: static;
-    height: 400px;
-    width: 100%;
-    top: auto;
+    height: 170px;
+    width: 170px;
     z-index: 2;
-    right: auto;
-    border-radius: 0%;
+    border-radius: 50%;
     box-shadow: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
+  }
+  .learnable-home-section-everything-is-learnable-one--media__green-circle__para {
+    font-family: "Nunito", sans-serif;
+    font-size: 13px;
+
+    color: var(--gun-metal);
+  }
+  .learnable-home-section-everything-is-learnable-one--media__blue-circle__para {
+    font-family: "Nunito", sans-serif;
+    font-size: 13px;
+
+    color: var(--isabeline);
+  }
+  .learnable-home-section-everything-is-learnable-one--media__green-circle__link {
+    font-size: 20px;
+    text-decoration: none;
+
+    color: var(--gun-metal);
+  }
+  .learnable-home-section-everything-is-learnable-one--media__blue-circle__link {
+    font-size: 20px;
+    text-decoration: none;
+
+    color: var(--isabeline);
   }
 }
 .learnable-home-section-everything-is-learnable-one__metrics {
@@ -1046,15 +1202,15 @@ code {
 @media screen and (max-width: 600px) {
   .learnable-home-section-everything-is-learnable-one__metrics {
     flex-wrap: wrap;
-    align-items: center;
-    padding: 10px;
-    padding-top: 10px;
+    align-items: flex-start;
+    padding: 20px;
     margin-top: 0px 0;
   }
   .learnable-home-section-everything-is-learnable-one__metric {
-    flex: 0 0 100%;
+    flex: 0 0 50%;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    box-sizing: border-box;
   }
 }
 .learnable-home-section-we-make-people-great {
@@ -1087,6 +1243,7 @@ code {
   font-weight: 900;
 }
 .learnable-home-section-we-make-people-great--text--para {
+  font-family: "Nunito", sans-serif;
   font-size: 17px;
   font-weight: 400;
 }
@@ -1095,6 +1252,7 @@ code {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    text-align: center;
   }
   .learnable-home-section-we-make-people-great--text {
     flex: 0 0 60%;
@@ -1104,28 +1262,23 @@ code {
   .learnable-home-section-we-make-people-great--media {
     text-align: center;
     box-sizing: border-box;
+    order: -1;
   }
   .learnable-home-section-we-make-people-great--media--image {
     height: 400px;
     width: 400px;
   }
   .learnable-home-section-we-make-people-great--text--head {
-    font-size: 40px;
+    font-size: 34px;
   }
   .learnable-home-section-we-make-people-great--text--para {
-    font-size: 20px;
+    font-size: 15px;
+    line-height: 24.5px;
   }
 }
 @media screen and (max-width: 600px) {
-  .learnable-home-section-we-make-people-great {
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-  }
   .learnable-home-section-we-make-people-great--text {
     flex: 0 0 100%;
-    padding: 10px;
-    box-sizing: border-box;
   }
   .learnable-home-section-we-make-people-great--media {
     text-align: center;
@@ -1135,12 +1288,6 @@ code {
   .learnable-home-section-we-make-people-great--media--image {
     height: 300px;
     width: 300px;
-  }
-  .learnable-home-section-we-make-people-great--text--head {
-    font-size: 40px;
-  }
-  .learnable-home-section-we-make-people-great--text--para {
-    font-size: 20px;
   }
 }
 .learnable-home-section-unusual-experience {
@@ -1173,6 +1320,8 @@ code {
 
 @media screen and (max-width: 900px) {
   .learnable-home-section-unusual-experience {
+    text-align: center;
+    background-color: #fff;
     padding: 0px;
   }
   .learnable-home-section-unusual-experience--media {
@@ -1185,10 +1334,12 @@ code {
     padding: 10px;
   }
   .learnable-home-section-unusual-experience--text h1 {
-    font-size: 30px;
+    font-size: 34px;
   }
   .learnable-home-section-unusual-experience--text p {
+    font-family: "Nunito", sans-serif;
     font-size: 14px;
+    line-height: 24.27px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1203,13 +1354,6 @@ code {
   .learnable-home-section-unusual-experience--text {
     flex: 0 0 100%;
     margin-left: 0px;
-    padding: 10px;
-  }
-  .learnable-home-section-unusual-experience--text h1 {
-    font-size: 40px;
-  }
-  .learnable-home-section-unusual-experience--text p {
-    font-size: 18px;
   }
 }
 
@@ -1290,11 +1434,13 @@ code {
 @media screen and (max-width: 900px) {
   .learnable-home-section-build-software {
     padding: 0px;
+    text-align: center;
   }
   .learnable-home-section-build-software__text {
     flex: 0 0 100%;
     padding: 50px;
     box-sizing: border-box;
+    margin: 30px 0;
   }
   .learnable-home-section-build-software__boxes {
     flex: 0 0 100%;
@@ -1304,6 +1450,13 @@ code {
   .learnable-home-section-build-software__box {
     width: 100%;
     height: 300px;
+  }
+  .learnable-home-section-build-software__text--big {
+    font-size: 34px;
+  }
+  .learnable-home-section-build-software__text--para {
+    font-size: 15px;
+    line-height: 24.27px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1322,7 +1475,6 @@ code {
   }
   .learnable-home-section-build-software__box {
     width: 100%;
-    height: 350px;
   }
 }
 
@@ -1404,16 +1556,19 @@ code {
 @media screen and (max-width: 900px) {
   .learnable-home-section-design-different {
     padding: 0px;
+    text-align: center;
   }
   .learnable-home-section-design-different__text {
     flex: 0 0 100%;
     padding: 50px;
     box-sizing: border-box;
+    margin: 30px 0;
   }
   .learnable-home-section-design-different__boxes {
     flex: 0 0 100%;
     padding: 0;
     box-sizing: border-box;
+    order: 1;
   }
   .learnable-home-section-design-different__box {
     width: 100%;
@@ -1421,22 +1576,15 @@ code {
   }
 }
 @media screen and (max-width: 600px) {
-  .learnable-home-section-design-different {
-    padding: 0px;
-  }
   .learnable-home-section-design-different__text {
-    flex: 0 0 100%;
     padding: 20px;
-    box-sizing: border-box;
   }
-  .learnable-home-section-design-different__boxes {
-    flex: 0 0 100%;
-    padding: 0;
-    box-sizing: border-box;
+  .learnable-home-section-design-different__text--big {
+    font-size: 24px;
   }
-  .learnable-home-section-design-different__box {
-    width: 100%;
-    height: 350px;
+  .learnable-home-section-design-different__text--para {
+    font-size: 15px;
+    line-height: 24.27px;
   }
 }
 
@@ -1464,6 +1612,7 @@ code {
 .learnable-home-section-who-is-eligible--text p {
   font-family: "Nunito", sans-serif;
   font-size: 17px;
+  line-height: 24.27px;
   font-weight: 400;
   color: var(--gun-metal);
 }
@@ -1471,6 +1620,7 @@ code {
 @media screen and (max-width: 600px) {
   .learnable-home-section-who-is-eligible {
     margin: 50px 0;
+    text-align: center;
   }
   .learnable-home-section-who-is-eligible--media {
     flex: 0 0 100%;
@@ -1478,7 +1628,13 @@ code {
   .learnable-home-section-who-is-eligible--text {
     flex: 0 0 100%;
     margin-left: 10px;
-    padding: 10px;
+    padding: 20px;
+  }
+  .learnable-home-section-who-is-eligible--text h1 {
+    font-size: 34px;
+  }
+  .learnable-home-section-who-is-eligible--text p {
+    font-size: 15px;
   }
 }
 
@@ -1491,9 +1647,20 @@ code {
   background-color: var(--vivid-tangelo);
 }
 .learnable-home-section-our-culture--media {
+  position: relative;
   flex: 0 0 50%;
   padding: 50px;
   box-sizing: border-box;
+}
+.learnable-home-section-our-culture--media--float-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: var(--carribean-green);
+  color: var(--isabeline);
+  border-radius: 50%;
 }
 .learnable-home-section-our-culture--text {
   flex: 0 0 45%;
@@ -1508,11 +1675,13 @@ code {
 .learnable-home-section-our-culture--text p {
   font-family: "Nunito", sans-serif;
   font-size: 17px;
+  line-height: 24.27px;
   font-weight: 400;
 }
 
 @media screen and (max-width: 900px) {
   .learnable-home-section-our-culture {
+    text-align: center;
     padding: 0px;
   }
   .learnable-home-section-our-culture--media {
@@ -1522,7 +1691,13 @@ code {
   }
   .learnable-home-section-our-culture--text {
     flex: 0 0 40%;
-    padding: 10px;
+    padding: 30px;
+  }
+  .learnable-home-section-our-culture--text h1 {
+    font-size: 34px;
+  }
+  .learnable-home-section-our-culture--text p {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1537,7 +1712,6 @@ code {
   .learnable-home-section-our-culture--text {
     flex: 0 0 100%;
     margin-left: 0px;
-    padding: 10px;
   }
 }
 
@@ -1623,6 +1797,7 @@ code {
 .learnable-home-section-learning-can-be-fun--text p {
   font-family: "Nunito", sans-serif;
   font-size: 17px;
+  line-height: 24.27px;
   font-weight: 400;
   color: var(--gun-metal);
 }
@@ -1630,6 +1805,7 @@ code {
 @media screen and (max-width: 900px) {
   .learnable-home-section-learning-can-be-fun {
     margin: 50px 0;
+    text-align: center;
   }
   .learnable-home-section-learning-can-be-fun__boxes {
     flex: 0 0 100%;
@@ -1649,6 +1825,12 @@ code {
     height: 150px;
     width: 25%;
     box-sizing: border-box;
+  }
+  .learnable-home-section-learning-can-be-fun--text h1 {
+    font-size: 34px;
+  }
+  .learnable-home-section-learning-can-be-fun--text p {
+    font-size: 15px;
   }
 }
 
@@ -1708,6 +1890,7 @@ code {
 .learnable-home-section-learn-from-experts--text--para {
   font-family: "Nunito", sans-serif;
   font-size: 17px;
+  line-height: 24.27px;
   font-weight: 400;
   color: var(--gun-metal);
 }
@@ -1727,15 +1910,19 @@ code {
     flex-wrap: wrap;
     padding: 0 0;
     box-sizing: border-box;
+    text-align: center;
   }
   .learnable-home-section-learn-from-experts--text {
     flex: 0 0 100%;
     padding: 20px;
     box-sizing: border-box;
+    order: -1;
   }
   .learnable-home-section-learn-from-experts--text--head {
-    font-size: 60px;
-    font-weight: 900;
+    font-size: 34px;
+  }
+  .learnable-home-section-learn-from-experts--text--para {
+    font-size: 15px;
   }
 
   .learnable-home-section-learn-from-experts--media {
@@ -1746,10 +1933,11 @@ code {
   }
   .learnable-home-section-learn-from-experts--media--profile {
     height: 200px;
-    flex: 1 0 30%;
+    margin: 30px;
   }
   .learnable-home-section-learn-from-experts--media--profile__image--img {
     height: 120px;
+    border-radius: 50%;
   }
 }
 
@@ -1833,7 +2021,9 @@ code {
   font-size: 40px;
 }
 .learnable-home-section-learning-outside-class--text p {
+  font-family: "Nunito", sans-serif;
   font-size: 17px;
+  line-height: 24.27px;
   font-weight: 400;
 }
 
@@ -1853,12 +2043,19 @@ code {
     flex: 1 0 100%;
     display: flex;
     flex-wrap: wrap;
+    order: -1;
   }
 
   .learnable-home-section-learning-outside-class__box {
     height: 150px;
     width: 25%;
     box-sizing: border-box;
+  }
+  .learnable-home-section-learning-outside-class--text h1 {
+    font-size: 34px;
+  }
+  .learnable-home-section-learning-outside-class--text p {
+    font-size: 15px;
   }
 }
 
@@ -1895,7 +2092,9 @@ code {
   color: var(--isabeline);
 }
 .learnable-home-section-apply-your-knowledge--text p {
+  font-family: "Nunito", sans-serif;
   font-size: 17px;
+  line-height: 24.27px;
   font-weight: 400;
   color: var(--isabeline);
 }
@@ -1909,6 +2108,7 @@ code {
 @media screen and (max-width: 900px) {
   .learnable-home-section-apply-your-knowledge {
     padding: 0px;
+    text-align: center;
   }
   .learnable-home-section-apply-your-knowledge--media {
     flex: 0 0 40%;
@@ -1917,22 +2117,22 @@ code {
   }
   .learnable-home-section-apply-your-knowledge--text {
     flex: 0 0 40%;
-    padding: 10px;
+    padding: 20px;
+  }
+  .learnable-home-section-apply-your-knowledge--text h1 {
+    font-size: 34px;
+  }
+  .learnable-home-section-apply-your-knowledge--text p {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 600px) {
-  .learnable-home-section-apply-your-knowledge {
-    padding: 0px;
-  }
   .learnable-home-section-apply-your-knowledge--media {
     flex: 0 0 100%;
-    order: -1;
-    padding: 0px;
   }
   .learnable-home-section-apply-your-knowledge--text {
     flex: 0 0 100%;
     margin-left: 0px;
-    padding: 10px;
   }
 }
 
@@ -1978,19 +2178,27 @@ code {
 @media screen and (max-width: 600px) {
   .learnable-home-section-faqs__faqs {
     width: 100%;
-    padding: 10px;
+    padding: 0px;
     box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 50px;
   }
   .learnable-home-section-faqs--head {
-    font-size: 50px;
-    margin-left: 20px;
+    font-size: 34px;
+    margin-left: 0px;
+    text-align: center;
   }
 
   .learnable-home-section-faqs__faq {
+    padding: 20px;
+    justify-content: center;
     margin-bottom: 20px;
+    border-bottom: 1px solid grey;
   }
   .learnable-home-section-faqs__faq--link {
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 5px;
   }
   .learnable-home-section-faqs__faq--icon {
     font-size: 16px;
@@ -2050,12 +2258,14 @@ code {
 }
 @media screen and (max-width: 1200px) {
   .learnable-home-section-journal--journal--head {
-    font-size: 20px;
+    font-size: 24px;
+    padding: 20px 30px;
   }
 }
 @media screen and (max-width: 600px) {
   .learnable-home-section-journal {
-    padding: 10px;
+    padding: 0px;
+    text-align: center;
   }
   .learnable-home-section-journal--journal {
     flex: 0 0 100%;
@@ -2071,7 +2281,7 @@ code {
 
 .learnable-home-section-mentioned-in {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 50px 100px;
   flex-wrap: wrap;
@@ -2082,14 +2292,13 @@ code {
   font-weight: 900;
 }
 .learnable-home-section-mentioned-in--image {
-  flex: 0 0;
   height: 21px;
   margin: 20px;
 }
 @media screen and (max-width: 900px) {
   .learnable-home-section-mentioned-in {
     display: flex;
-    justify-content: center;
+    padding: 50px ;
   }
 }
 

@@ -39,6 +39,10 @@ class Landing extends Component {
               </div>
             </div>
           </div>
+          <div className="landing__section-one--text-small ">
+              We understand that opportunities are scarce in these parts. We are
+              either creating or exposing our people to these opportunities.
+            </div>
         </section>
 
         <section className="landing__section-learnable">
@@ -136,6 +140,7 @@ class Landing extends Component {
             <button className="landing__section-stay-up-to-date__text--button">
               subscribe
             </button>
+            <p className='landing__section-stay-up-to-date__text--hidden'>View Privacy Policy</p>
           </div>
         </section>
       </React.Fragment>

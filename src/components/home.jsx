@@ -28,6 +28,7 @@ class Home extends Component {
     return (
       <div className="learnable-home">
         <section className="section-learnable-coming-soon">
+          <i className="fa fa-times close-coming-soon"></i>
           <div className="section-learnable-coming-soon-one">
             <h1 className="section-learnable-coming-soon-one__heading">
               Coming soon: Learnable ‘20
@@ -58,16 +59,6 @@ class Home extends Component {
             </p>
           </div>
           <div className="learnable-home-section-everything-is-learnable-one--media">
-            <div className="learnable-home-section-everything-is-learnable-one--media__arrow_down">
-              <img src={arrow_down} alt="" />
-            </div>
-            <div className="learnable-home-section-everything-is-learnable-one--media__big_pic">
-              <img src={pic_1} alt="" />
-              <div className="learnable-home-section-everything-is-learnable-one--media__big_pic-video-control">
-                <i className="fa fa-play"></i>
-                <small>Discover the Learnable Experience</small>
-              </div>
-            </div>
             <div className="learnable-home-section-everything-is-learnable-one--media__green-circle">
               <a
                 className="learnable-home-section-everything-is-learnable-one--media__green-circle__link"
@@ -89,6 +80,16 @@ class Home extends Component {
               <p className="learnable-home-section-everything-is-learnable-one--media__blue-circle__para">
                 What to expect
               </p>
+            </div>
+            <div className="learnable-home-section-everything-is-learnable-one--media__arrow_down">
+              <img src={arrow_down} alt="" />
+            </div>
+            <div className="learnable-home-section-everything-is-learnable-one--media__big_pic">
+              <img src={pic_1} alt="" />
+              <div className="learnable-home-section-everything-is-learnable-one--media__big_pic-video-control">
+                <i className="fa fa-play"></i>
+                <small>Discover the Learnable Experience</small>
+              </div>
             </div>
           </div>
           <div className="learnable-home-section-everything-is-learnable-one__metrics">
@@ -315,7 +316,8 @@ class Home extends Component {
 
         <section className="learnable-home-section-our-culture">
           <div className="learnable-home-section-our-culture--media">
-            <img src={pic_3} alt="" width="100%" />
+            <img src={pic_5} alt="" width="100%" />
+            <i className="fa fa-play learnable-home-section-our-culture--media--float-play"></i>
           </div>
           <div className="learnable-home-section-our-culture--text">
             <h1>Our culture</h1>
@@ -719,6 +721,7 @@ class Home extends Component {
             <button className="landing__section-stay-up-to-date__text--button">
               subscribe
             </button>
+            <p className='landing__section-stay-up-to-date__text--hidden'>View Privacy Policy</p>
           </div>
         </section>
       </div>

@@ -109,6 +109,7 @@ class ProductDesigners extends Component {
             <button className="landing__section-stay-up-to-date__text--button">
               subscribe
             </button>
+            <p className='landing__section-stay-up-to-date__text--hidden'>View Privacy Policy</p>
           </div>
         </section>
       </div>
