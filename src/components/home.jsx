@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import pic_1 from "../images/learnable/pic_1.png";
-import pic_2 from "../images/learnable/pic_2.png"; 
+import pic_2 from "../images/learnable/pic_2.png";
 import pic_3 from "../images/learnable/pic_3.png";
 import pic_4 from "../images/learnable/pic_4.png";
 import pic_5 from "../images/learnable/pic_5.png";
@@ -38,7 +38,9 @@ class Home extends Component {
             </p>
           </div>
           <div className="section-learnable-coming-soon-two">
-            <p>Click link to download...</p>
+            <p className="section-learnable-coming-soon-one__paragraph">
+              Click link to download...
+            </p>
             <a className="section-learnable-coming-soon-two__link" href="#">
               Learnable ‘20 Brochure
             </a>
@@ -47,7 +49,7 @@ class Home extends Component {
         <section className="learnable-home-section-everything-is-learnable-one">
           <div className="learnable-home-section-everything-is-learnable-one--text">
             <div className="learnable-home-section-everything-is-learnable-one--text-big">
-              <h1> Everything is Learnable</h1>
+              Everything is Learnable
             </div>
 
             <p className="learnable-home-section-everything-is-learnable-one--text-small">
@@ -653,7 +655,6 @@ class Home extends Component {
               </small>
             </div>
           </div>
-       
         </section>
 
         <section className="learnable-home-section-mentioned-in">

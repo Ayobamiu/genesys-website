@@ -685,7 +685,7 @@ code {
 .footer-copyrights-section-one {
   margin-right: 20px;
 }
-.footer-copyrights-section-one p{
+.footer-copyrights-section-one p {
   font-size: 10px;
   font-weight: 400;
 }
@@ -735,7 +735,7 @@ code {
   align-items: center;
   flex-wrap: wrap;
   background-color: var(--saffron);
-  font-family: "Roboto", sans-serif;
+  color: var(--space-cadet);
 }
 .section-learnable-coming-soon-one {
   flex: 0 0 40%;
@@ -751,11 +751,15 @@ code {
   padding: 50px;
   box-sizing: border-box;
 }
+.section-learnable-coming-soon-one__paragraph {
+  font-size: 15px;
+  font-weight: 400;
+}
 .section-learnable-coming-soon-two__link,
 .section-learnable-coming-soon-two__link:active {
-  font-size: 40px;
-  font-weight: 700;
-  color: #000;
+  font-size: 34px;
+  font-weight: 900;
+  color: var(--space-cadet);
 }
 @media screen and (max-width: 1000px) {
   .section-learnable-coming-soon-one {
@@ -790,15 +794,18 @@ code {
 .learnable-home-section-everything-is-learnable-one--text {
   width: 40%;
   padding: 100px;
+  color: var(--space-cadet);
 }
 .learnable-home-section-everything-is-learnable-one--text-big {
-  font-size: 70px;
-  font-weight: 700;
+  font-size: 96px;
+  font-weight: 900;
   margin-bottom: 30px;
-  line-height: 100px;
+  line-height: 105.78px;
 }
 .learnable-home-section-everything-is-learnable-one--text-small {
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--gun-metal);
 }
 @media screen and (max-width: 1200px) {
   .learnable-home-section-everything-is-learnable-one--text {
@@ -844,6 +851,7 @@ code {
 .learnable-home-section-everything-is-learnable-one--media__big_pic {
   flex: 1;
   position: relative;
+  color: var(--isabeline);
 }
 .learnable-home-section-everything-is-learnable-one--media__big_pic img {
   width: 100%;
@@ -860,8 +868,7 @@ code {
 }
 .learnable-home-section-everything-is-learnable-one--media__big_pic-video-control
   i {
-  background-color: green;
-  color: white;
+  background-color: var(--carribean-green);
   padding: 20px;
   border-radius: 50%;
   margin-bottom: 20px;
@@ -869,7 +876,7 @@ code {
 }
 .learnable-home-section-everything-is-learnable-one--media__big_pic-video-control
   small {
-  color: #fff;
+  color: var(--isabeline);
 }
 
 @media screen and (max-width: 600px) {
@@ -895,7 +902,7 @@ code {
   position: absolute;
   height: 250px;
   width: 250px;
-  background-color: green;
+  background-color: var(--carribean-green);
   top: -210px;
   z-index: 2;
   right: 400px;
@@ -905,14 +912,14 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #000;
+  color: var(--gun-metal);
 }
 
 .learnable-home-section-everything-is-learnable-one--media__blue-circle {
   position: absolute;
   height: 250px;
   width: 250px;
-  background-color: blue;
+  background-color: var(--space-cadet);
   top: -210px;
   z-index: 2;
   right: 100px;
@@ -922,24 +929,29 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--isabeline);
 
   /* text-align: left; */
 }
-.learnable-home-section-everything-is-learnable-one--media__green-circle__para,
-.learnable-home-section-everything-is-learnable-one--media__blue-circle__para {
-  font-size: 18px;
+.learnable-home-section-everything-is-learnable-one--media__green-circle__para {
+  font-size: 15px;
   font-weight: 400;
-  color: #000;
+  color: var(--gun-metal);
 }
-.learnable-home-section-everything-is-learnable-one--media__green-circle__link,
-.learnable-home-section-everything-is-learnable-one--media__blue-circle__link {
-  font-size: 25px;
-  font-weight: 700;
-  color: #000;
+.learnable-home-section-everything-is-learnable-one--media__blue-circle__para {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--isabeline);
+}
+.learnable-home-section-everything-is-learnable-one--media__green-circle__link {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--gun-metal);
 }
 .learnable-home-section-everything-is-learnable-one--media__blue-circle__link {
-  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--isabeline);
 }
 
 @media screen and (max-width: 900px) {
@@ -947,7 +959,6 @@ code {
     position: static;
     height: 400px;
     width: 100%;
-    background-color: green;
     top: auto;
     z-index: 2;
     right: auto;
@@ -957,7 +968,6 @@ code {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #000;
     box-sizing: border-box;
   }
 
@@ -965,7 +975,6 @@ code {
     position: static;
     height: 400px;
     width: 100%;
-    background-color: blue;
     top: auto;
     z-index: 2;
     right: auto;
@@ -975,27 +984,11 @@ code {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
     box-sizing: border-box;
-  }
-  .learnable-home-section-everything-is-learnable-one--media__green-circle__para,
-  .learnable-home-section-everything-is-learnable-one--media__blue-circle__para {
-    font-size: 18px;
-    font-weight: 400;
-    color: #000;
-  }
-  .learnable-home-section-everything-is-learnable-one--media__green-circle__link,
-  .learnable-home-section-everything-is-learnable-one--media__blue-circle__link {
-    font-size: 25px;
-    font-weight: 700;
-    color: #000;
-  }
-  .learnable-home-section-everything-is-learnable-one--media__blue-circle__link {
-    color: #fff;
   }
 }
 .learnable-home-section-everything-is-learnable-one__metrics {
-  background-color: #ddd;
+  background-color: var(--isabeline);
   display: flex;
   justify-content: center;
   padding: 100px;
@@ -1008,9 +1001,13 @@ code {
 }
 .learnable-home-section-everything-is-learnable-one__metric--head {
   font-size: 40px;
+  font-weight: 900;
+  color: var(--carribean-green);
 }
 .learnable-home-section-everything-is-learnable-one__metric--para {
+  font-size: 15px;
   font-weight: 400;
+  color: var(--space-cadet);
 }
 @media screen and (max-width: 600px) {
   .learnable-home-section-everything-is-learnable-one__metrics {
