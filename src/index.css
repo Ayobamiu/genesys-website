@@ -2298,7 +2298,7 @@ code {
 @media screen and (max-width: 900px) {
   .learnable-home-section-mentioned-in {
     display: flex;
-    padding: 50px ;
+    padding: 50px;
   }
 }
 
@@ -2344,10 +2344,12 @@ code {
 .learnable-software-section-learnable-software-developer--text--para {
   font-family: "Nunito", sans-serif;
   font-size: 17px;
+  line-height: 24.27px;
   font-weight: 400;
 }
 @media screen and (max-width: 1200px) {
   .learnable-software-section-learnable-software-developer {
+    text-align: center;
     justify-content: center;
     align-items: center;
     padding: 10px;
@@ -2360,13 +2362,17 @@ code {
   .learnable-software-section-learnable-software-developer--media {
     text-align: center;
     box-sizing: border-box;
+    order: -1;
   }
   .learnable-software-section-learnable-software-developer--media--image {
     height: 400px;
     width: 400px;
   }
   .learnable-software-section-learnable-software-developer--text--head {
-    font-size: 50px;
+    font-size: 40px;
+  }
+  .learnable-software-section-learnable-software-developer--text--para {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -2408,13 +2414,14 @@ code {
 }
 @media screen and (max-width: 600px) {
   .learnable-software-section-someone-to-count-on {
+    text-align: center;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
   }
   .learnable-software-section-someone-to-count-on--text {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 34px;
+    line-height: 37.46px;
   }
 }
 .learnable-software-computer-section-image {
@@ -2442,6 +2449,7 @@ code {
 .learnable-software-section-we-expect-you-to--para {
   font-family: "Nunito", sans-serif;
   font-size: 17px;
+  line-height: 24.27px;
   font-weight: 400;
   margin-bottom: 20px;
   display: inline-block;
@@ -2451,9 +2459,13 @@ code {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
+    text-align: center;
   }
   .learnable-software-section-we-expect-you-to--head {
-    font-size: 40px;
+    font-size: 24px;
+  }
+  .learnable-software-section-we-expect-you-to--para {
+    font-size: 15px;
   }
 }
 
@@ -2476,6 +2488,7 @@ code {
 .learnable-apply-section-apply-your-knowledge--text--para {
   font-family: "Nunito", sans-serif;
   font-size: 17px;
+  line-height: 24.27px;
   font-weight: 400;
   color: var(--gun-metal);
 }
@@ -2491,16 +2504,19 @@ code {
     flex: 0 0 100%;
     padding: 10px;
     box-sizing: border-box;
+    text-align: center;
+    margin: 30px 0;
   }
   .learnable-apply-section-apply-your-knowledge--text--head {
-    font-size: 50px;
+    font-size: 34px;
   }
   .learnable-apply-section-apply-your-knowledge--text--para {
-    font-size: 20px;
+    font-size: 15px;
   }
   .learnable-apply-section-apply-your-knowledge--media {
     padding: 0px;
     box-sizing: border-box;
+    order: -1;
   }
 }
 .learnable-apply-section-image {
@@ -2531,12 +2547,30 @@ code {
 .learnable-apply-section-text--text--para {
   font-family: "Nunito", sans-serif;
   font-size: 20px;
+
   font-weight: 400;
 }
 .learnable-apply-section-text--text--link {
   font-family: "Nunito", sans-serif;
   font-size: 15px;
   color: var(--carribean-green);
+}
+
+@media screen and (max-width: 600px) {
+  .learnable-apply-section-texts {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 50px auto;
+    text-align: center;
+  }
+  .learnable-apply-section-text--text--head {
+    font-size: 34px;
+  }
+  .learnable-apply-section-text--text--para {
+    font-size: 15px;
+    line-height: 24.27px;
+  }
 }
 
 .learnable-journal-section-one {
@@ -2618,6 +2652,7 @@ code {
   .learnable-journal-section-one {
     padding: 10px;
     margin: 0px;
+    flex-direction: column;
   }
   .learnable-journal-section-one--head {
     font-size: 40px;
@@ -2627,6 +2662,9 @@ code {
     background-color: transparent;
     border: solid 1px;
     border-radius: 5px;
+    display: block;
+
+    margin-bottom: 40px;
   }
   .learnable-journal-section-learn-like-a-pro {
     display: flex;
@@ -2635,6 +2673,8 @@ code {
     flex-wrap: wrap;
     padding: 0 0px;
     margin-top: 0;
+    text-align: center;
+    background-color: var(--isabeline);
   }
 
   .learnable-journal-section-learn-like-a-pro--media {
@@ -2644,11 +2684,30 @@ code {
     flex: 0 0 100%;
     padding: 10px;
   }
+  .learnable-journal-section-learn-like-a-pro--text--head {
+    font-size: 34px;
+    font-weight: 900;
+    color: var(--space-cadet);
+  }
+  .learnable-journal-section-learn-like-a-pro--text--para {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.88px;
+    color: var(--gun-metal);
+  }
+  .learnable-journal-section-learn-like-a-pro--text--profile {
+    display: flex;
+    flex-direction: column;
+  }
+  .learnable-journal-section-learn-like-a-pro--text--profile--image {
+    margin: 30px 0;
+  }
 }
 
 .learnable-journal-section-journals {
   padding: 10px;
   margin-bottom: 100px;
+  text-align: center;
 }
 
 .learnable-journal-section-journals-load-more-button {
@@ -2686,12 +2745,15 @@ code {
 @media screen and (max-width: 600px) {
   .learnable-faq-section-faqs--flex {
     padding: 0px;
+    justify-content: center;
   }
   .learnable-faq-section-faqs--flex--head {
     margin-left: 10px;
+    font-size: 34px;
   }
   .learnable-faq-section-faqs--flex--image {
     width: 100%;
+    order: -1;
   }
 }
 
@@ -2725,15 +2787,17 @@ code {
     box-sizing: border-box;
   }
   .learnable-faq-section-faqs--head {
-    font-size: 50px;
+    font-size: 40px;
     margin-left: 20px;
   }
 
   .learnable-faq-section-faqs__faq {
     margin-bottom: 20px;
+    text-align: center;
   }
   .learnable-faq-section-faqs__faq--link {
-    font-size: 18px;
+    font-size: 16px;
+    padding: 10px;
   }
   .learnable-faq-section-faqs__faq--icon {
     font-size: 16px;

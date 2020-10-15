@@ -20,9 +20,9 @@ class Landing extends Component {
           <div className="landing__section-one--text">
             <div className="landing__section-one--text-big">
               Genesys provides opportunities for young Nigerian techies and
-              opportunities to grow and innovate.
+              opportunities to grow and innovate. 
             </div>
-            <div className="landing__section-one--text-small">
+            <div className="landing__section-one--text-small landing__section-one--text-small-hide-later">
               We understand that opportunities are scarce in these parts. We are
               either creating or exposing our people to these opportunities.
             </div>
@@ -39,10 +39,10 @@ class Landing extends Component {
               </div>
             </div>
           </div>
-          <div className="landing__section-one--text-small ">
-              We understand that opportunities are scarce in these parts. We are
-              either creating or exposing our people to these opportunities.
-            </div>
+          <div className="landing__section-one--text-small landing__section-one--text-small-hide-first ">
+            We understand that opportunities are scarce in these parts. We are
+            either creating or exposing our people to these opportunities.
+          </div>
         </section>
 
         <section className="landing__section-learnable">
@@ -102,7 +102,9 @@ class Landing extends Component {
             </div>
           </div>
           <div className="landing__section-other-things-we-do__text">
-            <h1 className='landing__section-other-things-we-do__text--big'>Other things we do</h1>
+            <h1 className="landing__section-other-things-we-do__text--big">
+              Other things we do
+            </h1>
           </div>
         </section>
         <section className="landing__section-best-team-in-the-world">
@@ -140,7 +142,9 @@ class Landing extends Component {
             <button className="landing__section-stay-up-to-date__text--button">
               subscribe
             </button>
-            <p className='landing__section-stay-up-to-date__text--hidden'>View Privacy Policy</p>
+            <p className="landing__section-stay-up-to-date__text--hidden">
+              View Privacy Policy
+            </p>
           </div>
         </section>
       </React.Fragment>

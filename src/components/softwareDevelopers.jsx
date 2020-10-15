@@ -87,7 +87,7 @@ class SoftwareDevelopers extends Component {
             <h1 className="landing__section-stay-up-to-date__text--heading">
               Stay up to date on what we are doing and new learning
               opportunities
-            </h1>
+            </h1> 
             <div className="landing__section-stay-up-to-date__text--middle">
               <input
                 className="landing__section-stay-up-to-date__text--middle-input"
