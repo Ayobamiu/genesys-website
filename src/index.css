@@ -5,6 +5,7 @@
   --saffron: #eac435;
   --isabeline: #eeeeee;
   --carribean-green: #03cea4;
+  --dark-purple: #2d1e2f;
 }
 body {
   margin: 0;
@@ -1034,6 +1035,7 @@ code {
   flex: 0 0 45%;
   padding: 50px;
   box-sizing: border-box;
+  color: var(--gun-metal);
 }
 .learnable-home-section-we-make-people-great--media {
   flex: 0 0 45%;
@@ -1044,14 +1046,16 @@ code {
 .learnable-home-section-we-make-people-great--media--image {
   height: 500px;
   width: 500px;
-  background-color: green;
+  background-color: var(--carribean-green);
   border-radius: 50%;
 }
 .learnable-home-section-we-make-people-great--text--head {
-  font-size: 50px;
+  font-size: 40px;
+  font-weight: 900;
 }
 .learnable-home-section-we-make-people-great--text--para {
-  font-size: 20px;
+  font-size: 17px;
+  font-weight: 400;
 }
 @media screen and (max-width: 1200px) {
   .learnable-home-section-we-make-people-great {
@@ -1112,7 +1116,8 @@ code {
   align-items: center;
   flex-wrap: wrap;
   padding: 0;
-  background-color: #ddd;
+  background-color: var(--isabeline);
+  color: var(--gun-metal);
 }
 .learnable-home-section-unusual-experience--media {
   flex: 0 0 45%;
@@ -1126,14 +1131,13 @@ code {
 }
 .learnable-home-section-unusual-experience--text h1 {
   font-size: 40px;
+  font-weight: 900;
 }
 .learnable-home-section-unusual-experience--text p {
-  font-size: 18px;
+  font-size: 15px;
+  font-weight: 400;
 }
-.learnable-home-section-unusual-experience--text a {
-  font-size: 20px;
-  text-transform: uppercase;
-}
+
 @media screen and (max-width: 900px) {
   .learnable-home-section-unusual-experience {
     padding: 0px;
@@ -1152,9 +1156,6 @@ code {
   }
   .learnable-home-section-unusual-experience--text p {
     font-size: 14px;
-  }
-  .learnable-home-section-unusual-experience--text a {
-    font-size: 18px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1177,10 +1178,6 @@ code {
   .learnable-home-section-unusual-experience--text p {
     font-size: 18px;
   }
-  .learnable-home-section-unusual-experience--text a {
-    font-size: 20px;
-    text-transform: uppercase;
-  }
 }
 
 .learnable-home-section-build-software {
@@ -1195,12 +1192,18 @@ code {
 }
 .learnable-home-section-build-software__text--small {
   text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
 }
 .learnable-home-section-build-software__text--big {
-  font-size: 50px;
+  font-size: 40px;
+  font-weight: 900;
 }
 .learnable-home-section-build-software__text--para {
-  font-size: 20px;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
 }
 .learnable-home-section-build-software__boxes {
   flex: 0 0 45%;
@@ -1209,36 +1212,37 @@ code {
 }
 .learnable-home-section-build-software__box {
   width: 50%;
-  height: 350px;
+  height: 339px;
   padding: 2%;
   box-sizing: border-box;
 }
 .learnable-home-section-build-software__box--text {
-  font-size: 30px;
+  font-size: 34px;
+  font-weight: 900;
 }
 .learnable-home-section-build-software__box-blue {
-  color: white;
-  background-color: blue;
+  color: var(--isabeline);
+  background-color: var(--space-cadet);
 }
 .learnable-home-section-build-software__box-green {
-  color: white;
-  background-color: green;
+  color: var(--isabeline);
+  background-color: var(--carribean-green);
 }
 .learnable-home-section-build-software__box-yellow {
-  color: #000;
-  background-color: yellow;
+  color: var(--space-cadet);
+  background-color: var(--saffron);
 }
 .learnable-home-section-build-software__box-brown {
-  color: white;
-  background-color: brown;
+  color: var(--isabeline);
+  background-color: var(--dark-purple);
 }
 .learnable-home-section-build-software__box-black {
-  color: white;
-  background-color: black;
+  color: var(--isabeline);
+  background-color: var(--gun-metal);
 }
 .learnable-home-section-build-software__box-orange {
-  color: white;
-  background-color: orange;
+  color: var(--isabeline);
+  background-color: var(--vivid-tangelo);
 }
 
 @media screen and (max-width: 900px) {
@@ -1286,18 +1290,31 @@ code {
   align-items: center;
   padding: 100px;
   flex-wrap: wrap;
+  background-color: var(--isabeline);
 }
 .learnable-home-section-design-different__text {
   flex: 0 0 40%;
 }
 .learnable-home-section-design-different__text--small {
   text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
 }
 .learnable-home-section-design-different__text--big {
-  font-size: 50px;
+  font-size: 40px;
+  font-weight: 900;
 }
 .learnable-home-section-design-different__text--para {
-  font-size: 20px;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+}
+.learnable-home-section-design-different__text--link {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--carribean-green);
 }
 .learnable-home-section-design-different__boxes {
   flex: 0 0 45%;
@@ -1313,29 +1330,30 @@ code {
 .learnable-home-section-design-different__box--text {
   font-size: 30px;
 }
+
 .learnable-home-section-design-different__box-blue {
-  color: white;
-  background-color: blue;
+  color: var(--isabeline);
+  background-color: var(--space-cadet);
 }
 .learnable-home-section-design-different__box-green {
-  color: white;
-  background-color: green;
+  color: var(--isabeline);
+  background-color: var(--carribean-green);
 }
 .learnable-home-section-design-different__box-yellow {
-  color: #000;
-  background-color: yellow;
+  color: var(--space-cadet);
+  background-color: var(--saffron);
 }
 .learnable-home-section-design-different__box-brown {
-  color: white;
-  background-color: brown;
+  color: var(--isabeline);
+  background-color: var(--dark-purple);
 }
 .learnable-home-section-design-different__box-black {
-  color: white;
-  background-color: black;
+  color: var(--isabeline);
+  background-color: var(--gun-metal);
 }
 .learnable-home-section-design-different__box-orange {
-  color: white;
-  background-color: orange;
+  color: var(--isabeline);
+  background-color: var(--vivid-tangelo);
 }
 
 @media screen and (max-width: 900px) {
@@ -1395,9 +1413,13 @@ code {
 }
 .learnable-home-section-who-is-eligible--text h1 {
   font-size: 40px;
+  font-weight: 900;
+  color: var(--gun-metal);
 }
 .learnable-home-section-who-is-eligible--text p {
-  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 600px) {
@@ -1420,10 +1442,10 @@ code {
   align-items: center;
   flex-wrap: wrap;
   padding: 0;
-  background-color: orangered;
+  background-color: var(--vivid-tangelo);
 }
 .learnable-home-section-our-culture--media {
-  flex: 0 0 45%;
+  flex: 0 0 50%;
   padding: 50px;
   box-sizing: border-box;
 }
@@ -1431,18 +1453,18 @@ code {
   flex: 0 0 45%;
   padding: 70px;
   box-sizing: border-box;
-  color: white;
+  color: var(--isabeline);
 }
 .learnable-home-section-our-culture--text h1 {
   font-size: 40px;
+  font-weight: 900;
 }
 .learnable-home-section-our-culture--text p {
-  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
 }
-.learnable-home-section-our-culture--text a {
-  font-size: 20px;
-  text-transform: uppercase;
-}
+
 @media screen and (max-width: 900px) {
   .learnable-home-section-our-culture {
     padding: 0px;
@@ -1455,15 +1477,6 @@ code {
   .learnable-home-section-our-culture--text {
     flex: 0 0 40%;
     padding: 10px;
-  }
-  .learnable-home-section-our-culture--text h1 {
-    font-size: 30px;
-  }
-  .learnable-home-section-our-culture--text p {
-    font-size: 14px;
-  }
-  .learnable-home-section-our-culture--text a {
-    font-size: 18px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1480,16 +1493,6 @@ code {
     margin-left: 0px;
     padding: 10px;
   }
-  .learnable-home-section-our-culture--text h1 {
-    font-size: 40px;
-  }
-  .learnable-home-section-our-culture--text p {
-    font-size: 18px;
-  }
-  .learnable-home-section-our-culture--text a {
-    font-size: 20px;
-    text-transform: uppercase;
-  }
 }
 
 .learnable-home-section-learning-can-be-fun {
@@ -1501,110 +1504,64 @@ code {
 }
 .learnable-home-section-learning-can-be-fun__boxes {
   flex: 1 0 45%;
-  min-height: 800px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .learnable-home-section-learning-can-be-fun__box {
-  height: 200px;
+  height: 145px;
   width: 23%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .learnable-home-section-learning-can-be-fun__box-one {
   background-image: url("./images/learnable/rec_3_1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-can-be-fun__box-two {
   background-image: url("./images/learnable/rec_3_2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-can-be-fun__box-three {
   background-image: url("./images/learnable/rec_3_3.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-can-be-fun__box-four {
   background-image: url("./images/learnable/rec_3_4.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-can-be-fun__box-five {
   background-image: url("./images/learnable/rec_3_5.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-can-be-fun__box-six {
   background-image: url("./images/learnable/rec_3_6.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-can-be-fun__box-seven {
   background-image: url("./images/learnable/rec_3_7.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-can-be-fun__box-eight {
   background-image: url("./images/learnable/rec_3_8.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-can-be-fun__box-nine {
   background-image: url("./images/learnable/rec_3_9.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-can-be-fun__box-ten {
   background-image: url("./images/learnable/rec_3_10.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-can-be-fun__box-eleven {
   background-image: url("./images/learnable/rec_3_11.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-can-be-fun__box-twelve {
   background-image: url("./images/learnable/rec_3_12.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-can-be-fun__box-thirteen {
   background-image: url("./images/learnable/rec_3_13.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-can-be-fun__box-fourteen {
   background-image: url("./images/learnable/rec_3_14.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-can-be-fun__box-fiften {
   background-image: url("./images/learnable/rec_3_15.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-can-be-fun__box-sixteen {
   background-image: url("./images/learnable/rec_3_16.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-can-be-fun--text {
   flex: 0 0 45%;
@@ -1614,9 +1571,12 @@ code {
 }
 .learnable-home-section-learning-can-be-fun--text h1 {
   font-size: 40px;
+  font-weight: 900;
 }
 .learnable-home-section-learning-can-be-fun--text p {
-  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 900px) {
@@ -1633,7 +1593,6 @@ code {
   }
   .learnable-home-section-learning-can-be-fun__boxes {
     flex: 1 0 100%;
-    min-height: auto;
     display: flex;
     flex-wrap: wrap;
   }
@@ -1679,15 +1638,24 @@ code {
 .learnable-home-section-learn-from-experts--media--profile__image--img {
   width: 100%;
 }
-
+.learnable-home-section-learn-from-experts--media--profile__text {
+  margin-left: 5px;
+}
 .learnable-home-section-learn-from-experts--media--profile__text--head {
   margin: 0px;
   font-size: 20px;
+  font-weight: 900;
 }
 .learnable-home-section-learn-from-experts--media--profile__text--para {
+  font-family: "Nunito", sans-serif;
   margin: 0px;
+  font-size: 17px;
 }
-
+.learnable-home-section-learn-from-experts--text--para {
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
 @media screen and (max-width: 1000px) {
   .learnable-home-section-learn-from-experts--text {
     flex: 0 0 70%;
@@ -1710,6 +1678,11 @@ code {
     padding: 20px;
     box-sizing: border-box;
   }
+  .learnable-home-section-learn-from-experts--text--head {
+    font-size: 60px;
+    font-weight: 900;
+  }
+
   .learnable-home-section-learn-from-experts--media {
     flex: 0 0 100%;
     padding: 0;
@@ -1734,122 +1707,79 @@ code {
 }
 .learnable-home-section-learning-outside-class__boxes {
   flex: 1 0 45%;
-  min-height: 800px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .learnable-home-section-learning-outside-class__box {
-  height: 200px;
+  height: 150px;
   width: 23%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .learnable-home-section-learning-outside-class__box-one {
   background-image: url("./images/learnable/rec_3_1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-outside-class__box-two {
   background-image: url("./images/learnable/rec_3_2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-outside-class__box-three {
   background-image: url("./images/learnable/rec_3_3.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-outside-class__box-four {
   background-image: url("./images/learnable/rec_3_4.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-outside-class__box-five {
   background-image: url("./images/learnable/rec_3_5.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-outside-class__box-six {
   background-image: url("./images/learnable/rec_3_6.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-outside-class__box-seven {
   background-image: url("./images/learnable/rec_3_7.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-outside-class__box-eight {
   background-image: url("./images/learnable/rec_3_8.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-outside-class__box-nine {
   background-image: url("./images/learnable/rec_3_9.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-outside-class__box-ten {
   background-image: url("./images/learnable/rec_3_10.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-outside-class__box-eleven {
   background-image: url("./images/learnable/rec_3_11.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-outside-class__box-twelve {
   background-image: url("./images/learnable/rec_3_12.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-outside-class__box-thirteen {
   background-image: url("./images/learnable/rec_3_13.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-outside-class__box-fourteen {
   background-image: url("./images/learnable/rec_3_14.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-outside-class__box-fiften {
   background-image: url("./images/learnable/rec_3_15.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-outside-class__box-sixteen {
   background-image: url("./images/learnable/rec_3_16.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .learnable-home-section-learning-outside-class--text {
   flex: 0 0 45%;
   margin-left: 50px;
   padding: 40px;
   box-sizing: border-box;
+  color: var(--gun-metal);
 }
 .learnable-home-section-learning-outside-class--text h1 {
+  font-weight: 900;
   font-size: 40px;
 }
 .learnable-home-section-learning-outside-class--text p {
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 900px) {
@@ -1866,7 +1796,6 @@ code {
   }
   .learnable-home-section-learning-outside-class__boxes {
     flex: 1 0 100%;
-    min-height: auto;
     display: flex;
     flex-wrap: wrap;
   }
@@ -1888,14 +1817,14 @@ code {
 
 .learnable-home-section-apply-your-knowledge {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding: 0;
-  background-color: darkblue;
+  background-color: var(--space-cadet);
 }
 .learnable-home-section-apply-your-knowledge--media {
-  flex: 0 0 45%;
+  flex: 0 0 50%;
   padding: 50px;
   box-sizing: border-box;
 }
@@ -1903,18 +1832,22 @@ code {
   flex: 0 0 45%;
   padding: 70px;
   box-sizing: border-box;
-  color: white;
+  color: var(--isabeline);
 }
 .learnable-home-section-apply-your-knowledge--text h1 {
   font-size: 40px;
+  font-weight: 900;
 }
 .learnable-home-section-apply-your-knowledge--text p {
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: 400;
 }
 .learnable-home-section-apply-your-knowledge--text a {
-  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
   text-transform: uppercase;
-  color: green;
+  color: var(--carribean-green);
 }
 @media screen and (max-width: 900px) {
   .learnable-home-section-apply-your-knowledge {
@@ -1928,15 +1861,6 @@ code {
   .learnable-home-section-apply-your-knowledge--text {
     flex: 0 0 40%;
     padding: 10px;
-  }
-  .learnable-home-section-apply-your-knowledge--text h1 {
-    font-size: 30px;
-  }
-  .learnable-home-section-apply-your-knowledge--text p {
-    font-size: 14px;
-  }
-  .learnable-home-section-apply-your-knowledge--text a {
-    font-size: 18px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1953,16 +1877,6 @@ code {
     margin-left: 0px;
     padding: 10px;
   }
-  .learnable-home-section-apply-your-knowledge--text h1 {
-    font-size: 40px;
-  }
-  .learnable-home-section-apply-your-knowledge--text p {
-    font-size: 18px;
-  }
-  .learnable-home-section-apply-your-knowledge--text a {
-    font-size: 20px;
-    text-transform: uppercase;
-  }
 }
 
 .learnable-home-section-faqs__faqs {
@@ -1971,7 +1885,8 @@ code {
   padding: 150px;
 }
 .learnable-home-section-faqs--head {
-  font-size: 70px;
+  font-size: 60px;
+  font-weight: 900;
   margin-left: 200px;
 }
 
@@ -1980,12 +1895,12 @@ code {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid currentColor;
 }
 .learnable-home-section-faqs__faq--link {
-  font-size: 30px;
-  color: #000;
-  font-weight: 700;
+  font-size: 24px;
+  color: var(--gun-metal);
+  font-weight: 900;
 }
 .learnable-home-section-faqs__faq--icon {
   transform: rotate(180deg);
@@ -1993,7 +1908,11 @@ code {
   font-weight: 700;
 }
 .learnable-home-section-faqs__faq--see-all {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
   display: inline-block;
+  color: var(--carribean-green);
   width: 100%;
   text-align: center;
 }
@@ -2022,14 +1941,19 @@ code {
 
 .learnable-home-section-journal {
   padding: 100px 50px;
-  background-color: #ddd;
+  background-color: var(--isabeline);
 }
 .learnable-home-section-journal--head {
-  font-size: 70px;
+  font-size: 60px;
+  font-weight: 900;
   padding-left: 50px;
+  color: var(--gun-metal);
 }
 .learnable-home-section-journal--see--all {
-  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--carribean-green);
   text-transform: uppercase;
   margin-left: 100px;
   margin-bottom: 100px;
@@ -2048,17 +1972,26 @@ code {
   width: 100%;
 }
 .learnable-home-section-journal--journal--link {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
   margin: 20px 0;
   display: inline-block;
+  color: var(--carribean-green);
 }
 .learnable-home-section-journal--journal--head {
-  padding: 10px;
-  font-size: 30px;
+  font-size: 34px;
+  font-weight: 900;
   text-transform: capitalize;
+  color: var(--gun-metal);
+}
+.learnable-home-section-journal--journal--date {
+  font-family: "Nunito", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
 }
 @media screen and (max-width: 1200px) {
   .learnable-home-section-journal--journal--head {
-    /* font-weight: 700; */
     font-size: 20px;
   }
 }
@@ -2083,17 +2016,27 @@ code {
   justify-content: space-between;
   align-items: center;
   padding: 50px 100px;
+  flex-wrap: wrap;
 }
 .learnable-home-section-mentioned-in--text {
   text-decoration: underline;
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 900;
 }
 .learnable-home-section-mentioned-in--image {
-  height: 30px;
+  flex: 0 0;
+  height: 21px;
+  margin: 20px;
+}
+@media screen and (max-width: 900px) {
+  .learnable-home-section-mentioned-in {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .landing__section-stay-up-to-date--yellow {
-  background-color: yellow;
+  background-color: var(--saffron);
 }
 
 .learnable-software-section-learnable-software-developer {
