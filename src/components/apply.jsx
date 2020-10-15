@@ -4,7 +4,7 @@ import pic_1 from "../images/apply knowledge/pic_1.png";
 import pic_2 from "../images/apply knowledge/pic_2.png";
 class Apply extends Component {
   state = {};
-  render() {
+  render() { 
     return (
       <div className="learnable-apply">
         <section className="learnable-apply-section-apply-your-knowledge">

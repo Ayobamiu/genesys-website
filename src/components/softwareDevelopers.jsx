@@ -30,14 +30,14 @@ class SoftwareDevelopers extends Component {
           </div>
           <div className="learnable-software-section-learnable-software-developer--media">
             <img
-              className="learnable-software-section-learnable-software-developer--media--image"
+              className="learnable-software-section-learnable-software-developer--media--image learnable-software-section-learnable-software-developer--media--image--green"
               src={pic_1}
               alt=""
             />
           </div>
         </section>
         <section className="learnable-software-section-someone-to-count-on">
-          <h1 className="learnable-software-section-someone-to-count-on--text">
+          <h1 className="learnable-software-section-someone-to-count-on--text learnable-software-section-someone-to-count-on--text--green">
             “You are someone people can count on. Every day, you come in ready
             to make great things happen.”
           </h1>
