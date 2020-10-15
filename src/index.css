@@ -30,6 +30,38 @@ code {
     transform: translateY(-60%) scale(1);
   }
 }
+
+.navbar-pop-up {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 10;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-pop-up-toggle {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+.navbar-pop-up-link {
+  margin: 20px;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--gun-metal);
+}
+.navbar-pop-up-link:active,
+.navbar-pop-up-link:focus {
+  color: var(--vivid-tangelo);
+}
+
 .navbar {
   z-index: 1;
   background-color: #fff;
@@ -124,12 +156,6 @@ code {
   }
   .navbar .dev .hide_this {
     display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .navbar .dev .hide_this {
-    display: inline-block;
   }
 }
 
@@ -251,14 +277,17 @@ code {
 .landing__section-learnable--text h1 {
   font-weight: 900;
   font-size: 40px;
+  color: var(--gun-metal);
 }
 .landing__section-learnable--text p {
   font-size: 15px;
   font-weight: 400;
+  color: var(--gun-metal);
 }
 .landing__section-learnable--text a {
   font-size: 20px;
   text-transform: uppercase;
+  color: var(--carribean-green);
 }
 @media screen and (max-width: 600px) {
   .landing__section-learnable {
@@ -295,10 +324,12 @@ code {
 .landing__section-agora--text h1 {
   font-size: 40px;
   font-weight: 900;
+  color: var(--gun-metal);
 }
 .landing__section-agora--text p {
   font-size: 15px;
   font-weight: 400;
+  color: var(--gun-metal);
 }
 .landing__section-agora--text a {
   font-size: 20px;
@@ -339,10 +370,12 @@ code {
 .landing__section-startzone--text h1 {
   font-size: 40px;
   font-weight: 900;
+  color: var(--gun-metal);
 }
 .landing__section-startzone--text p {
   font-size: 15px;
   font-weight: 400;
+  color: var(--gun-metal);
 }
 .landing__section-startzone--text a {
   font-size: 15px;
@@ -1195,15 +1228,24 @@ code {
   font-family: "Nunito", sans-serif;
   font-size: 10px;
   font-weight: 400;
+  color: var(--gun-metal);
 }
 .learnable-home-section-build-software__text--big {
   font-size: 40px;
   font-weight: 900;
+  color: var(--space-cadet);
 }
 .learnable-home-section-build-software__text--para {
   font-size: 17px;
   font-weight: 400;
   font-family: "Nunito", sans-serif;
+  color: var(--gun-metal);
+}
+.learnable-home-section-build-software__text--link {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--carribean-green);
 }
 .learnable-home-section-build-software__boxes {
   flex: 0 0 45%;
@@ -1300,15 +1342,18 @@ code {
   font-family: "Nunito", sans-serif;
   font-size: 10px;
   font-weight: 400;
+  color: var(--gun-metal);
 }
 .learnable-home-section-design-different__text--big {
   font-size: 40px;
   font-weight: 900;
+  color: var(--space-cadet);
 }
 .learnable-home-section-design-different__text--para {
   font-size: 17px;
   font-weight: 400;
   font-family: "Nunito", sans-serif;
+  color: var(--gun-metal);
 }
 .learnable-home-section-design-different__text--link {
   font-family: "Nunito", sans-serif;
@@ -1420,6 +1465,7 @@ code {
   font-family: "Nunito", sans-serif;
   font-size: 17px;
   font-weight: 400;
+  color: var(--gun-metal);
 }
 
 @media screen and (max-width: 600px) {
@@ -1572,11 +1618,13 @@ code {
 .learnable-home-section-learning-can-be-fun--text h1 {
   font-size: 40px;
   font-weight: 900;
+  color: var(--gun-metal);
 }
 .learnable-home-section-learning-can-be-fun--text p {
   font-family: "Nunito", sans-serif;
   font-size: 17px;
   font-weight: 400;
+  color: var(--gun-metal);
 }
 
 @media screen and (max-width: 900px) {
@@ -1646,15 +1694,22 @@ code {
   font-size: 20px;
   font-weight: 900;
 }
+
 .learnable-home-section-learn-from-experts--media--profile__text--para {
   font-family: "Nunito", sans-serif;
   margin: 0px;
   font-size: 17px;
 }
+.learnable-home-section-learn-from-experts--text--head {
+  font-size: 60px;
+  font-weight: 900;
+  color: var(--gun-metal);
+}
 .learnable-home-section-learn-from-experts--text--para {
   font-family: "Nunito", sans-serif;
   font-size: 17px;
   font-weight: 400;
+  color: var(--gun-metal);
 }
 @media screen and (max-width: 1000px) {
   .learnable-home-section-learn-from-experts--text {
@@ -1837,10 +1892,12 @@ code {
 .learnable-home-section-apply-your-knowledge--text h1 {
   font-size: 40px;
   font-weight: 900;
+  color: var(--isabeline);
 }
 .learnable-home-section-apply-your-knowledge--text p {
   font-size: 17px;
   font-weight: 400;
+  color: var(--isabeline);
 }
 .learnable-home-section-apply-your-knowledge--text a {
   font-family: "Nunito", sans-serif;
@@ -1888,6 +1945,7 @@ code {
   font-size: 60px;
   font-weight: 900;
   margin-left: 200px;
+  color: var(--gun-metal);
 }
 
 .learnable-home-section-faqs__faq {
@@ -2210,6 +2268,7 @@ code {
   font-family: "Nunito", sans-serif;
   font-size: 17px;
   font-weight: 400;
+  color: var(--gun-metal);
 }
 .learnable-apply-section-apply-your-knowledge--media {
   padding: 50px;
@@ -2321,6 +2380,7 @@ code {
   text-transform: uppercase;
   margin-bottom: 50px;
   display: block;
+  color: var(--carribean-green);
 }
 .learnable-journal-section-learn-like-a-pro--text--head {
   font-size: 40px;
@@ -2435,7 +2495,7 @@ code {
 }
 .learnable-faq-section-faqs__faq--link {
   font-size: 30px;
-  color:var(--gun-metal);
+  color: var(--gun-metal);
   font-weight: 700;
 }
 .learnable-faq-section-faqs__faq--icon {

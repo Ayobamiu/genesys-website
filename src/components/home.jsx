@@ -171,7 +171,6 @@ class Home extends Component {
               learning by experimentation and problem solving. To us, every task
               is an opportunity to learn.
             </p>
-           
           </div>
         </section>
         <section className="learnable-home-section-build-software">
@@ -192,7 +191,12 @@ class Home extends Component {
               nurture and grow bright young minds from the get go because that s
               how our industry will thrive.
             </p>
-            <a href="#">Learn more</a>
+            <a
+              className="learnable-home-section-build-software__text--link"
+              href="#"
+            >
+              Learn more
+            </a>
           </div>
           <div className="learnable-home-section-build-software__boxes">
             <div className="learnable-home-section-build-software__box learnable-home-section-build-software__box-blue">
@@ -277,7 +281,12 @@ class Home extends Component {
               practically involved in the world s most modern design concepts.
               At Genesys, we re building designers who put the users first.
             </p>
-            <a className='learnable-home-section-design-different__text--link' href="#">Learn more</a>
+            <a
+              className="learnable-home-section-design-different__text--link"
+              href="#"
+            >
+              Learn more
+            </a>
           </div>
         </section>
 
