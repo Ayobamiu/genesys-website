@@ -1,3 +1,9 @@
+## Front-end Design for Genesys. Genesys is a people centered community focused on growing talent, businesses and developing technical capacity in Nigeria.
+
+check out the [website](https://genesys-front.herokuapp.com/)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
